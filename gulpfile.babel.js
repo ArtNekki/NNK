@@ -18,6 +18,8 @@ import svgSprite     from 'gulp-svg-sprite';
 import svgmin        from 'gulp-svgmin';
 import cheerio       from 'gulp-cheerio';
 import replace       from 'gulp-replace';
+import postcss       from 'gulp-postcss';
+import postcssSVG    from 'postcss-svg';
 
 // Load all Gulp plugins into one variable
 const $ = plugins();
@@ -89,7 +91,7 @@ function sass() {
   const postCssPlugins = [
     // Autoprefixer
     autoprefixer({ browsers: COMPATIBILITY }),
-
+    postcssSVG({ dirs: 'src/assets/img/svg/'})
     // UnCSS - Uncomment to remove unused styles in production
     // PRODUCTION && uncss.postcssPlugin(UNCSS_OPTIONS),
   ].filter(Boolean);
