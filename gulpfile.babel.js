@@ -14,6 +14,10 @@ import webpack2      from 'webpack';
 import named         from 'vinyl-named';
 import uncss         from 'uncss';
 import autoprefixer  from 'autoprefixer';
+import svgSprite     from 'gulp-svg-sprite';
+import svgmin        from 'gulp-svgmin';
+import cheerio       from 'gulp-cheerio';
+import replace       from 'gulp-replace';
 
 // Load all Gulp plugins into one variable
 const $ = plugins();
@@ -32,7 +36,7 @@ function loadConfig() {
 // Build the "dist" folder by running all of the below tasks
 // Sass must be run later so UnCSS can search for used classes in the others assets.
 gulp.task('build',
- gulp.series(clean, gulp.parallel(pages, javascript, images, copy), sass, styleGuide));
+ gulp.series(clean, gulp.parallel(pages, javascript, images, svg, copy), sass, styleGuide));
 
 // Build the site, run the server, and watch for file changes
 gulp.task('default',
@@ -139,10 +143,36 @@ function javascript() {
 // Copy images to the "dist" folder
 // In production, the images are compressed
 function images() {
-  return gulp.src('src/assets/img/**/*')
+  return gulp.src(['src/assets/img/**/*', '!src/assets/img/svg/*'])
     .pipe($.if(PRODUCTION, $.imagemin([
       $.imagemin.jpegtran({ progressive: true }),
     ])))
+    .pipe(gulp.dest(PATHS.dist + '/assets/img'));
+}
+
+function svg() {
+  return gulp.src('src/assets/img/svg/*.svg')
+    .pipe(svgmin({
+        js2svg: {
+            pretty: true
+        }
+    }))
+    .pipe(cheerio({
+        run: function ($) {
+            $('[fill]').removeAttr('fill');
+            $('[stroke]').removeAttr('stroke');
+            $('[style]').removeAttr('style');
+        },
+        parserOptions: {xmlMode: true}
+    }))
+    .pipe(replace('&gt;', '>'))
+    .pipe(svgSprite({
+        mode: {
+            symbol: {
+                sprite: "sprite.svg"
+            }
+        }
+    }))
     .pipe(gulp.dest(PATHS.dist + '/assets/img'));
 }
 
@@ -169,5 +199,6 @@ function watch() {
   gulp.watch('src/assets/scss/**/*.scss').on('all', sass);
   gulp.watch('src/assets/js/**/*.js').on('all', gulp.series(javascript, browser.reload));
   gulp.watch('src/assets/img/**/*').on('all', gulp.series(images, browser.reload));
+  gulp.watch('src/assets/img/svg/*.svg').on('all', gulp.series(svg, browser.reload));
   gulp.watch('src/styleguide/**').on('all', gulp.series(styleGuide, browser.reload));
 }
