@@ -65,7 +65,12 @@
 @include motion-ui-transitions;
 @include motion-ui-animations;
 
-//components
+//glabal custom
+@import 'global/common.scss';
 
+//components
 @import 'components/page-header/page-header';
 @import 'components/main-logo/main-logo';
+@import 'components/header-user/header-user';
+@import 'components/media-object/media-object';
+@import 'components/dropdown/dropdown';

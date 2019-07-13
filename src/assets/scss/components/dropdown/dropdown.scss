@@ -1,0 +1,25 @@
+.dropdown--contracts {
+
+  button.dropdown {
+    margin-right: 0.7em;
+    margin-left: 1.8em;
+    margin-bottom: 0;
+    padding: 0.6em;
+    padding-right: 0.3em;
+    padding-left: 0.5em;
+    font-size: 13px;
+    color: $medium-gray;
+    border-bottom: 1px solid $light-gray;
+    background: none;
+    transition: none;
+
+    &::after {
+      width: 12px;
+      height: 8px;
+      top: 0.3em;
+      background: url("arrow-down");
+      background-repeat: no-repeat;
+      border: none;
+    }
+  }
+}
