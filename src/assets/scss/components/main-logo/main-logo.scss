@@ -1,0 +1,36 @@
+.main-logo {
+  display: inline-flex;
+  align-items: center;
+
+  &-icon {
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    background-image: url("main-logo");
+    background-repeat: no-repeat;
+  }
+
+  &-text {
+    position: relative;
+    margin-left: 18px;
+    padding-left: 20px;
+    font-size: 16px;
+    font-weight: 700;
+    color: $black;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: -10px;
+      left: 0;
+      width: 1px;
+      height: 40px;
+      background-color: $light-gray;
+    }
+
+    &:after {
+      left: 4px;
+    }
+  }
+}

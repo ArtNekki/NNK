@@ -3,6 +3,8 @@
 @import 'settings';
 @import 'foundation';
 @import 'motion-ui';
+@import 'global/functions';
+@import 'global/mixins';
 
 // Global styles
 @include foundation-global-styles;
@@ -65,4 +67,5 @@
 
 //components
 
-@import "components/page-header/page-header";
+@import 'components/page-header/page-header';
+@import 'components/main-logo/main-logo';
