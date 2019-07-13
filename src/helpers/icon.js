@@ -2,7 +2,7 @@ module.exports = function(options) {
   const name = options.hash.name;
   const mods = options.hash.mods;
   const root = options.data.root.root;
-  let cssClass = 'icon-' + name;
+  let cssClass = 'icon';
   let allMods = '';
 
   if (mods !== 'undefined' && mods ) {
@@ -12,9 +12,9 @@ module.exports = function(options) {
       }
   }
 
-  // cssClass+= allMods;
+  cssClass+= allMods;
 
-  const svg = `<svg class=${cssClass}>
+  const svg = `<svg class="${cssClass}">
                  <use xlink:href="${root}assets/img/symbol/sprite.svg#${name}">
               </svg>`
 

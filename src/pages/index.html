@@ -1,20 +1,29 @@
 <div class="grid-container">
   <div class="grid-x grid-margin-x">
     <main class="cell large-8">
-      <ul class="tabs" data-tabs id="main-tabs">
-        <li class="tabs-title is-active">
-          <a href="#account-state-tab" aria-selected="true">Состояние счета</a>
+      <ul class="tabs main-nav main-nav--tabs" data-tabs id="main-tabs">
+        <li class="tabs-title main-nav-item is-active">
+          <a href="#account-state-tab" class="main-nav-link" aria-selected="true">
+            {{{ icon name="nav-account-state" }}}
+            <span class="text">Состояние счета</span>
+          </a>
         </li>
-        <li class="tabs-title">
-          <a data-tabs-target="statement-tab" href="#statement-tab">Выписки</a>
+        <li class="tabs-title main-nav-item">
+          <a class="main-nav-link" data-tabs-target="statement-tab" href="#statement-tab">
+            {{{ icon name="nav-statements" }}}
+            <span class="text">Выписки</span>
+          </a>
         </li>
-        <li class="tabs-title">
-          <a data-tabs-target="cost-tab" href="#cost-tab">Стоимость</a>
+        <li class="tabs-title main-nav-item">
+          <a class="main-nav-link" data-tabs-target="cost-tab" href="#cost-tab">
+            {{{ icon name="nav-cost" }}}
+            <span class="text">Стоимость</span>
+          </a>
         </li>
-        <li class="tabs-title">
-          <a data-tabs-target="messages-tab" href="#messages-tab">
+        <li class="tabs-title main-nav-item">
+          <a class="main-nav-link" data-tabs-target="messages-tab" href="#messages-tab">
             <span class="badge" id="messageCount">1</span>
-            Сообщения
+            <span class="text">Сообщения</span>
           </a>
         </li>
       </ul>

@@ -67,10 +67,13 @@
 
 //glabal custom
 @import 'global/common.scss';
+@import 'global/main-nav.scss';
 
 //components
 @import 'components/page-header/page-header';
 @import 'components/main-logo/main-logo';
-@import 'components/header-user/header-user';
+@import 'components/main-nav/main-nav';
+@import 'components/tabs/tabs';
+@import 'components/user-panel/user-panel';
 @import 'components/media-object/media-object';
 @import 'components/dropdown/dropdown';

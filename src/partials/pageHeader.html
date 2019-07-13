@@ -1,37 +1,69 @@
 <header class="page-header">
   <div class="grid-container">
     <div class="top-bar page-header-inner">
-      <div class="top-bar-left">
+      <div class="top-bar-left page-header-left-bar">
         <a href="#" class="main-logo">
           <i class="main-logo-icon"></i>
           <span class="main-logo-text">АО «ННК-Приморнефтепродукт»</span>
         </a>
+        <button class="page-header-burger">
+          <span></span>
+        </button>
       </div>
-      <div class="top-bar-right">
-        <div class="header-user">
-          <div class="media-object media-object--header-user">
-            <div class="media-object-section">
-              <div class="thumbnail">
-                <img src= "{{root}}assets/img/avatars/ava-user-001.jpg">
-              </div>
-            </div>
-            <div class="media-object-section">
-              <a href="#" class="name">ООО "Золотой Дракон"</a>
+      <div class="top-bar-right user-panel" data-closable>
+        <div class="media-object media-object--header-user">
+          <div class="media-object-section">
+            <div class="thumbnail">
+              <img src= "{{root}}assets/img/avatars/ava-user-001.jpg">
             </div>
           </div>
-          <div class="dropdown dropdown--contracts">
-            <button class="button dropdown" type="button" data-toggle="user-dropdown">НК21/1 - 592</button>
-            <div class="dropdown-pane" id="user-dropdown" data-dropdown data-auto-focus="true">
-              <ul class="list">
-                <li>Item 1</li>
-                <li>Item 2</li>
-                <li>Item 3</li>
-                <li>Item 4</li>
-              </ul>
-            </div>
+          <div class="media-object-section">
+            <a href="#" class="name">ООО "Золотой Дракон"</a>
           </div>
-          <a href="#" class="logout">Выйти</a>
         </div>
+        <div class="dropdown dropdown--contracts">
+          <button class="button dropdown" type="button" data-toggle="user-dropdown">НК21/1 - 592</button>
+          <div class="dropdown-pane" id="user-dropdown" data-dropdown data-auto-focus="true">
+            <ul class="list">
+              <li>Item 1</li>
+              <li>Item 2</li>
+              <li>Item 3</li>
+              <li>Item 4</li>
+            </ul>
+          </div>
+        </div>
+        <nav class="main-nav">
+          <ul class="main-nav-list">
+            <li>
+              <a href="#account-state-tab" class="main-nav-link">
+                {{{ icon name="nav-account-state" }}}
+                <span class="text">Состояние счета</span>
+              </a>
+            </li>
+            <li>
+              <a href="#statement-tab" class="main-nav-link">
+                {{{ icon name="nav-statements" }}}
+                <span class="text">Выписки</span>
+              </a>
+            </li>
+            <li>
+              <a href="#cost-tab" class="main-nav-link">
+                {{{ icon name="nav-cost" }}}
+                <span class="text">Стоимость</span>
+              </a>
+            </li>
+            <li>
+              <a href="#messages-tab" class="main-nav-link">
+                <span class="badge" id="messageCount">1 </span>
+                <span class="text">Сообщения</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <a href="#" class="user-panel-logout">Выйти</a>
+        <button class="user-panel-close close-button" aria-label="Close user info" type="button" data-close>
+           <span aria-hidden="true">&times;</span>
+         </button>
       </div>
     </div>
   </div>

@@ -1,10 +1,9 @@
 .dropdown--contracts {
 
   button.dropdown {
-    margin-right: 0.7em;
-    margin-left: 1.8em;
     margin-bottom: 0;
-    padding: 0.6em;
+    padding-top: 0.6em;
+    padding-bottom: 0.4em;
     padding-right: 0.3em;
     padding-left: 0.5em;
     font-size: 13px;
@@ -12,6 +11,12 @@
     border-bottom: 1px solid $light-gray;
     background: none;
     transition: none;
+
+    @include breakpoint(medium) {
+      margin-right: 0.7em;
+      margin-left: 1.8em;
+      padding-bottom: 0.6em;
+    }
 
     &::after {
       width: 12px;

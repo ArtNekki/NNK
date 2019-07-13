@@ -5,4 +5,44 @@
     min-height: 80px;
     padding: 0;
   }
+
+  &-left-bar {
+    display: flex;
+    align-items: center;
+
+    @include breakpoint(medium) {
+      display: block;
+    }
+  }
+
+  &-burger {
+    position: relative;
+    margin-left: auto;
+    display: inline-block;
+    width: 18px;
+    height: 2px;
+    background-color: $black;
+
+    @include breakpoint(medium) {
+      display: none;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 18px;
+      height: 2px;
+      background-color: $black;
+    }
+
+    &::before {
+      top: -5px;
+    }
+
+    &::after {
+      top: 5px;
+    }
+  }
 }

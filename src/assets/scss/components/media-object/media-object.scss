@@ -1,20 +1,49 @@
-.media-object--header-user {
-  margin-bottom: 0;
+.media-object {
+  flex-direction: column;
+  align-items: center;
 
-  .thumbnail {
-    border: none;
-    box-shadow: none;
+  @include breakpoint(medium) {
+    flex-direction: row;
+    align-items: flex-start;
   }
 
-  .name {
-    font-size: 13px;
-    line-height: 25px;
-    color: $medium-gray;
-  }
+  &--header-user {
+    margin-bottom: 0;
 
-  img {
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
+    .thumbnail {
+      border: none;
+      box-shadow: none;
+    }
+
+    .name {
+      margin-top: 12px;
+      margin-bottom: 7px;
+      display: block;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 25px;
+      color: $black;
+
+      @include breakpoint(medium) {
+        margin-top: 0;
+        margin-bottom: 0;
+        display: inline-block;
+        font-size: 13px;
+        font-weight: 400;
+        color: $medium-gray;
+      }
+    }
+
+    img {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background-color: $light-gray;
+
+      @include breakpoint(medium) {
+        width: 25px;
+        height: 25px;
+      }
+    }
   }
 }
