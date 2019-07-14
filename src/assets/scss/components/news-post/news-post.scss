@@ -1,0 +1,15 @@
+.news-post {
+  margin-top: 1.2rem;
+  margin-bottom: 2.5rem;
+
+  &-title {
+    font-size: 13px;
+    font-weight: 700;
+    color: $black;
+  }
+
+  p {
+    font-size: 13px;
+    color: $medium-gray;
+  }
+}

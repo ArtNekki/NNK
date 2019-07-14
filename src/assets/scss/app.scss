@@ -5,6 +5,7 @@
 @import 'motion-ui';
 @import 'global/functions';
 @import 'global/mixins';
+@import 'global/animations';
 
 // Global styles
 @include foundation-global-styles;
@@ -72,8 +73,14 @@
 //components
 @import 'components/page-header/page-header';
 @import 'components/main-logo/main-logo';
+@import 'components/button/button';
+@import 'components/aside/aside';
 @import 'components/main-nav/main-nav';
 @import 'components/tabs/tabs';
 @import 'components/user-panel/user-panel';
 @import 'components/media-object/media-object';
 @import 'components/dropdown/dropdown';
+@import 'components/orbit/orbit';
+@import 'components/page-section/page-section';
+@import 'components/news-post/news-post';
+@import 'components/list/list';

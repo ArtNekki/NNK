@@ -1,0 +1,22 @@
+.orbit {
+  margin-bottom: 1.2rem;
+
+  &-image {
+    height: 300px;
+    object-fit: cover;
+  }
+
+  &-bullets {
+    margin-top: 1rem;
+
+    button {
+      margin: 0.2rem;
+      width: 0.6rem;
+      height: 0.6rem;
+    }
+
+    button.is-active {
+      background-color: $light-gray;
+    }
+  }
+}

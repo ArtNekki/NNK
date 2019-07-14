@@ -1,0 +1,8 @@
+.aside {
+  padding-top: 1.5rem;
+
+  @include breakpoint(medium) {
+    padding-left: 2rem;
+    border-left: 1px solid $light-gray;
+  }
+}

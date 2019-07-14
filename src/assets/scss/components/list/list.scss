@@ -1,0 +1,26 @@
+.list {
+  &--danger {
+    margin: 0;
+    margin-bottom: 0.5rem;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  &--danger li {
+    position: relative;
+    padding-left: 3rem;
+    font-weight: 700;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 1rem;
+      left: 0.3rem;
+      transform: translateY(-50%);
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: red;
+    }
+  }
+}

@@ -2,13 +2,16 @@
   border-bottom: 1px solid $light-gray;
 
   &-inner {
+    @include top-bar-container;
     min-height: 80px;
     padding: 0;
   }
 
-  &-left-bar {
+  &-left {
+    margin-right: auto;
     display: flex;
     align-items: center;
+    flex: 1 1 auto;
 
     @include breakpoint(medium) {
       display: block;

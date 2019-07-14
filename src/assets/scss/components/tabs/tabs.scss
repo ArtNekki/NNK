@@ -2,6 +2,7 @@
 
   &--main-nav {
     position: relative;
+    padding-top: 16px;
     display: none;
     background-color: transparent;
 
@@ -25,12 +26,20 @@
     }
   }
 
+  &-content {
+    border: none;
+  }
+
   &-link {
 
     .tabs--main-nav & {
-      outline: none;
-
       @include main-nav-link();
+
+      outline: none;
+      margin-right: 5px;
+      padding-top: 17px;
+      padding-bottom: 17px;
+      padding-left: 0;
 
       @include hover() {
         @include main-nav-link-active();
@@ -62,6 +71,31 @@
 
     .tabs--main-nav & {
       @include main-nav-badge();
+    }
+  }
+
+  &-panel {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &-panel-header {
+    padding-top: 7px;
+    padding-bottom: 8px;
+  }
+
+  &-panel-header-left {
+
+  }
+
+  &-panel-header-right {
+    text-align: right;
+
+    .text {
+      margin-right: 5px;
+      vertical-align: super;
+      font-size: 12px;
+      color: #9b9b9b;
     }
   }
 }

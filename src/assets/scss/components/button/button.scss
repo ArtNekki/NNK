@@ -1,0 +1,44 @@
+.button {
+  outline: none;
+
+  &--update {
+    position: relative;
+    padding: 0.55em 0.6em;
+    padding-left: 2.7em;
+    color: $black;
+    font-weight: 700;
+    background-color: $light-gray !important;
+    text-shadow: none;
+    border-radius: 0.4em;
+    transition: none;
+
+    @include hover {
+      background-color: darken($light-gray, 5%);
+    }
+
+    @include active {
+      background-color: darken($light-gray, 5%);
+    }
+
+    @include focus {
+      background-color: darken($light-gray, 5%);
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 4px;
+      left: 5px;
+      width: 16px;
+      height: 16px;
+      background-color: red;
+    }
+
+    &.is-active::before {
+      transform-origin: 50% 50%;
+      animation-name: rotate;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+    }
+  }
+}
