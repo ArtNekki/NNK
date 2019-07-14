@@ -2,9 +2,10 @@
 
   &--main-nav {
     position: relative;
-    padding-top: 16px;
+    padding-top: 18px;
     display: none;
     background-color: transparent;
+    border: none;
 
     @include breakpoint(medium) {
       display: block;
@@ -80,8 +81,10 @@
   }
 
   &-panel-header {
+    margin-bottom: 20px;
     padding-top: 7px;
     padding-bottom: 8px;
+    border-bottom: 1px solid $light-gray;
   }
 
   &-panel-header-left {
