@@ -18,31 +18,38 @@
   &-burger {
     position: relative;
     margin-left: auto;
-    display: inline-block;
     width: 18px;
-    height: 2px;
-    background-color: $black;
+    height: 18px;
+    cursor: pointer;
 
     @include breakpoint(medium) {
       display: none;
     }
 
-    &::before,
-    &::after {
-      content: "";
-      position: absolute;
-      left: 0;
+    span {
+      position: relative;
       width: 18px;
       height: 2px;
+      display: inline-block;
       background-color: $black;
-    }
 
-    &::before {
-      top: -5px;
-    }
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 18px;
+        height: 2px;
+        background-color: $black;
+      }
 
-    &::after {
-      top: 5px;
+      &::before {
+        top: -5px;
+      }
+
+      &::after {
+        top: 5px;
+      }
     }
   }
 }

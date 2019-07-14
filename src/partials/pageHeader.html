@@ -6,7 +6,7 @@
           <i class="main-logo-icon"></i>
           <span class="main-logo-text">АО «ННК-Приморнефтепродукт»</span>
         </a>
-        <button class="page-header-burger">
+        <button class="page-header-burger" data-open-user-panel>
           <span></span>
         </button>
       </div>
@@ -32,34 +32,32 @@
             </ul>
           </div>
         </div>
-        <nav class="main-nav">
-          <ul class="main-nav-list">
-            <li>
-              <a href="#account-state-tab" class="main-nav-link">
-                {{{ icon name="nav-account-state" }}}
-                <span class="text">Состояние счета</span>
-              </a>
-            </li>
-            <li>
-              <a href="#statement-tab" class="main-nav-link">
-                {{{ icon name="nav-statements" }}}
-                <span class="text">Выписки</span>
-              </a>
-            </li>
-            <li>
-              <a href="#cost-tab" class="main-nav-link">
-                {{{ icon name="nav-cost" }}}
-                <span class="text">Стоимость</span>
-              </a>
-            </li>
-            <li>
-              <a href="#messages-tab" class="main-nav-link">
-                <span class="badge" id="messageCount">1 </span>
-                <span class="text">Сообщения</span>
-              </a>
-            </li>
-          </ul>
-        </nav>
+        <ul class="main-nav" id="main-nav">
+          <li class="main-nav-item">
+            <a href="#account-state-tab" class="main-nav-link" data-tabs-target="account-state-tab">
+              {{{ icon name="nav-account-state" }}}
+              <span class="main-nav-text">Состояние счета</span>
+            </a>
+          </li>
+          <li class="main-nav-item">
+            <a href="#statement-tab" class="main-nav-link" data-tabs-target="statement-tab">
+              {{{ icon name="nav-statements" }}}
+              <span class="main-nav-text">Выписки</span>
+            </a>
+          </li>
+          <li class="main-nav-item">
+            <a href="#cost-tab" class="main-nav-link" data-tabs-target="cost-tab">
+              {{{ icon name="nav-cost" }}}
+              <span class="main-nav-text">Стоимость</span>
+            </a>
+          </li>
+          <li class="main-nav-item">
+            <a href="#messages-tab" class="main-nav-link" data-tabs-target="messages-tab">
+              <span class="main-nav-badge" id="messageCount">1 </span>
+              <span class="main-nav-text">Сообщения</span>
+            </a>
+          </li>
+        </ul>
         <a href="#" class="user-panel-logout">Выйти</a>
         <button class="user-panel-close close-button" aria-label="Close user info" type="button" data-close>
            <span aria-hidden="true">&times;</span>

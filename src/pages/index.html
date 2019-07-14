@@ -1,29 +1,29 @@
 <div class="grid-container">
   <div class="grid-x grid-margin-x">
     <main class="cell large-8">
-      <ul class="tabs main-nav main-nav--tabs" data-tabs id="main-tabs">
-        <li class="tabs-title main-nav-item is-active">
-          <a href="#account-state-tab" class="main-nav-link" aria-selected="true">
+      <ul class="tabs tabs--main-nav" data-tabs data-deep-link="true" data-update-history="true" id="main-tabs">
+        <li class="tabs-title is-active">
+          <a data-tabs-target="account-state-tab" href="#account-state-tab" class="tabs-link" aria-selected="true">
             {{{ icon name="nav-account-state" }}}
-            <span class="text">Состояние счета</span>
+            <span class="tabs-text">Состояние счета</span>
           </a>
         </li>
-        <li class="tabs-title main-nav-item">
-          <a class="main-nav-link" data-tabs-target="statement-tab" href="#statement-tab">
+        <li class="tabs-title">
+          <a  data-tabs-target="statement-tab" href="#statement-tab" class="tabs-link">
             {{{ icon name="nav-statements" }}}
-            <span class="text">Выписки</span>
+            <span class="tabs-text">Выписки</span>
           </a>
         </li>
-        <li class="tabs-title main-nav-item">
-          <a class="main-nav-link" data-tabs-target="cost-tab" href="#cost-tab">
+        <li class="tabs-title">
+          <a data-tabs-target="cost-tab" href="#cost-tab" class="tabs-link">
             {{{ icon name="nav-cost" }}}
-            <span class="text">Стоимость</span>
+            <span class="tabs-text">Стоимость</span>
           </a>
         </li>
-        <li class="tabs-title main-nav-item">
-          <a class="main-nav-link" data-tabs-target="messages-tab" href="#messages-tab">
-            <span class="badge" id="messageCount">1</span>
-            <span class="text">Сообщения</span>
+        <li class="tabs-title">
+          <a data-tabs-target="messages-tab" href="#messages-tab" class="tabs-link">
+            <span class="tabs-badge" id="messageCount">1</span>
+            <span class="tabs-text">Сообщения</span>
           </a>
         </li>
       </ul>
