@@ -1,6 +1,6 @@
 <div class="page-main grid-container">
   <div class="grid-x grid-margin-x">
-    <main class="cell large-8">
+    <main class="cell large-8 stretch-free-height">
       <ul class="tabs tabs--main-nav" data-tabs data-deep-link="true" data-update-history="true" id="main-tabs">
         <li class="tabs-title is-active">
           <a data-tabs-target="account-state-tab" href="#account-state-tab" class="tabs-link" aria-selected="true">
@@ -27,7 +27,7 @@
           </a>
         </li>
       </ul>
-      <div class="tabs-content" data-tabs-content="main-tabs">
+      <div class="tabs-content stretch-free-height" data-tabs-content="main-tabs">
         <div class="tabs-panel is-active" id="account-state-tab">
           {{> accountStateTab }}
         </div>
@@ -37,7 +37,7 @@
         <div class="tabs-panel" id="cost-tab">
           {{> costTab }}
         </div>
-        <div class="tabs-panel" id="messages-tab">
+        <div class="tabs-panel tabs-panel--messages stretch-free-height" id="messages-tab">
           {{> messagesTab }}
         </div>
       </div>

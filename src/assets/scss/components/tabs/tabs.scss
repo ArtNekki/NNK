@@ -78,6 +78,13 @@
   &-panel {
     padding-left: 0;
     padding-right: 0;
+
+    &--messages.is-active {
+      @include breakpoint(medium) {
+        display: flex;
+        flex-direction: column;
+      }
+    }
   }
 
   &-panel-header {

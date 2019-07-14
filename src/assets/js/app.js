@@ -2,6 +2,7 @@ import $ from 'jquery';
 import 'what-input';
 import './modules/page-header/index';
 import './modules/main-nav/index';
+import './modules/chat/index';
 
 // Foundation JS relies on a global varaible. In ES6, all imports are hoisted
 // to the top of the file so if we used`import` to import Foundation,

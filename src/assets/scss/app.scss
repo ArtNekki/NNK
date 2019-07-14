@@ -3,6 +3,7 @@
 @import 'settings';
 @import 'foundation';
 @import 'motion-ui';
+@import 'global/utils';
 @import 'global/functions';
 @import 'global/mixins';
 @import 'global/animations';
@@ -88,3 +89,5 @@
 @import 'components/link/link';
 @import 'components/page-footer/page-footer';
 @import 'components/card/card';
+@import 'components/chat/chat';
+@import 'components/chat-message/chat-message';
