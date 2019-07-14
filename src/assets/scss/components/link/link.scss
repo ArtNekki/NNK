@@ -1,0 +1,14 @@
+.link {
+  font-size: 13px;
+  color: $orange;
+
+  &--arrow {
+
+    &::after {
+      content: "➝";
+      position: relative;
+      top: 0;
+      left: 5px;
+    }
+  }
+}
