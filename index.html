@@ -23,879 +23,881 @@
     </script>
   </head>
 <body>
-<header class="page-header">
-  <div class="grid-container">
-    <div class="page-header-inner">
-      <div class="page-header-left">
-        <a href="#" class="main-logo">
-          <i class="main-logo-icon"></i>
-          <span class="main-logo-text">АО «ННК-Приморнефтепродукт»</span>
-        </a>
-        <button class="page-header-burger" data-open-user-panel>
-          <span></span>
-        </button>
-      </div>
-      <div class="user-panel" data-closable>
-        <div class="media-object media-object--header-user">
-          <div class="media-object-section">
-            <div class="thumbnail">
-              <img src="assets/img/avatars/ava-user-001.jpg">
+  <div class="page-inner">
+    <header class="page-header">
+      <div class="grid-container">
+        <div class="page-header-inner">
+          <div class="page-header-left">
+            <a href="#" class="main-logo">
+              <i class="main-logo-icon"></i>
+              <span class="main-logo-text">АО «ННК-Приморнефтепродукт»</span>
+            </a>
+            <button class="page-header-burger" data-open-user-panel>
+              <span></span>
+            </button>
+          </div>
+          <div class="user-panel" data-closable>
+            <div class="media-object media-object--header-user">
+              <div class="media-object-section">
+                <div class="thumbnail">
+                  <img src="assets/img/avatars/ava-user-001.jpg">
+                </div>
+              </div>
+              <div class="media-object-section">
+                <a href="#" class="name">ООО "Золотой Дракон"</a>
+              </div>
             </div>
-          </div>
-          <div class="media-object-section">
-            <a href="#" class="name">ООО "Золотой Дракон"</a>
-          </div>
-        </div>
-        <div class="dropdown dropdown--contracts">
-          <button class="button dropdown" type="button" data-toggle="user-dropdown">НК21/1 - 592</button>
-          <div class="dropdown-pane" id="user-dropdown" data-dropdown data-auto-focus="true">
-            <ul class="list">
-              <li>НК21/1 - 592</li>
-              <li>НК21/1 - 592</li>
-              <li>НК21/1 - 592</li>
-              <li>НК21/1 - 592</li>
+            <div class="dropdown dropdown--contracts">
+              <button class="button dropdown" type="button" data-toggle="user-dropdown">НК21/1 - 592</button>
+              <div class="dropdown-pane" id="user-dropdown" data-dropdown data-auto-focus="true">
+                <ul class="list">
+                  <li>НК21/1 - 592</li>
+                  <li>НК21/1 - 592</li>
+                  <li>НК21/1 - 592</li>
+                  <li>НК21/1 - 592</li>
+                </ul>
+              </div>
+            </div>
+            <ul class="main-nav" id="main-nav">
+              <li class="main-nav-item">
+                <a href="#account-state-tab" class="main-nav-link" data-tabs-target="account-state-tab">
+                  <svg class="icon">
+                     <use xlink:href="assets/img/symbol/sprite.svg#nav-account-state">
+                  </svg>
+                  <span class="main-nav-text">Состояние счета</span>
+                </a>
+              </li>
+              <li class="main-nav-item">
+                <a href="#statement-tab" class="main-nav-link" data-tabs-target="statement-tab">
+                  <svg class="icon">
+                     <use xlink:href="assets/img/symbol/sprite.svg#nav-statements">
+                  </svg>
+                  <span class="main-nav-text">Выписки</span>
+                </a>
+              </li>
+              <li class="main-nav-item">
+                <a href="#cost-tab" class="main-nav-link" data-tabs-target="cost-tab">
+                  <svg class="icon">
+                     <use xlink:href="assets/img/symbol/sprite.svg#nav-cost">
+                  </svg>
+                  <span class="main-nav-text">Стоимость</span>
+                </a>
+              </li>
+              <li class="main-nav-item">
+                <a href="#messages-tab" class="main-nav-link" data-tabs-target="messages-tab">
+                  <span class="main-nav-badge" id="messageCount">1 </span>
+                  <span class="main-nav-text">Сообщения</span>
+                </a>
+              </li>
             </ul>
+            <a href="#" class="user-panel-logout">Выйти</a>
+            <button class="user-panel-close close-button" aria-label="Close user info" data-close-user-panel type="button">
+               <span aria-hidden="true">&times;</span>
+             </button>
           </div>
-        </div>
-        <ul class="main-nav" id="main-nav">
-          <li class="main-nav-item">
-            <a href="#account-state-tab" class="main-nav-link" data-tabs-target="account-state-tab">
-              <svg class="icon">
-                 <use xlink:href="assets/img/symbol/sprite.svg#nav-account-state">
-              </svg>
-              <span class="main-nav-text">Состояние счета</span>
-            </a>
-          </li>
-          <li class="main-nav-item">
-            <a href="#statement-tab" class="main-nav-link" data-tabs-target="statement-tab">
-              <svg class="icon">
-                 <use xlink:href="assets/img/symbol/sprite.svg#nav-statements">
-              </svg>
-              <span class="main-nav-text">Выписки</span>
-            </a>
-          </li>
-          <li class="main-nav-item">
-            <a href="#cost-tab" class="main-nav-link" data-tabs-target="cost-tab">
-              <svg class="icon">
-                 <use xlink:href="assets/img/symbol/sprite.svg#nav-cost">
-              </svg>
-              <span class="main-nav-text">Стоимость</span>
-            </a>
-          </li>
-          <li class="main-nav-item">
-            <a href="#messages-tab" class="main-nav-link" data-tabs-target="messages-tab">
-              <span class="main-nav-badge" id="messageCount">1 </span>
-              <span class="main-nav-text">Сообщения</span>
-            </a>
-          </li>
-        </ul>
-        <a href="#" class="user-panel-logout">Выйти</a>
-        <button class="user-panel-close close-button" aria-label="Close user info" data-close-user-panel type="button">
-           <span aria-hidden="true">&times;</span>
-         </button>
-      </div>
-    </div>
-  </div>
-</header>
-<div class="page-main grid-container">
-  <div class="grid-x grid-margin-x">
-    <main class="cell large-8 stretch-free-height">
-      <ul class="tabs tabs--main-nav" data-tabs data-deep-link="true" data-update-history="true" id="main-tabs">
-        <li class="tabs-title is-active">
-          <a data-tabs-target="account-state-tab" href="#account-state-tab" class="tabs-link" aria-selected="true">
-            <svg class="icon">
-                 <use xlink:href="assets/img/symbol/sprite.svg#nav-account-state">
-              </svg>
-            <span class="tabs-text">Состояние счета</span>
-          </a>
-        </li>
-        <li class="tabs-title">
-          <a  data-tabs-target="statement-tab" href="#statement-tab" class="tabs-link">
-            <svg class="icon">
-                 <use xlink:href="assets/img/symbol/sprite.svg#nav-statements">
-              </svg>
-            <span class="tabs-text">Выписки</span>
-          </a>
-        </li>
-        <li class="tabs-title">
-          <a data-tabs-target="cost-tab" href="#cost-tab" class="tabs-link">
-            <svg class="icon">
-                 <use xlink:href="assets/img/symbol/sprite.svg#nav-cost">
-              </svg>
-            <span class="tabs-text">Стоимость</span>
-          </a>
-        </li>
-        <li class="tabs-title">
-          <a data-tabs-target="messages-tab" href="#messages-tab" class="tabs-link">
-            <span class="tabs-badge" id="messageCount">1</span>
-            <span class="tabs-text">Сообщения</span>
-          </a>
-        </li>
-      </ul>
-      <div class="tabs-content stretch-free-height" data-tabs-content="main-tabs">
-        <div class="tabs-panel is-active" id="account-state-tab">
-          <div class="tabs-panel-header">
-            <div class="grid-x">
-              <div class="cell medium-6 tabs-panel-header-left">
-                <span class="text">Текущее состояние вашего счета и карт.</span>
-              </div>
-              <div class="cell medium-6 tabs-panel-header-right">
-                <span class="text">Актуальность данных</span>
-                <button href="#" class="button button--update is-active">24.04.2019, 18:32</button>
-              </div>
-            </div>
-          </div>
-          <div class="tabs-panel-main">
-            <div class="grid-x grid-margin-x">
-              <div class="cell medium-6">
-                <div class="card card--table">
-                  <div class="card-devider">
-                    Счет
-                  </div>
-                  <div class="card-section">
-                    <table class="table table--no-border unstriped">
-                      <tr>
-                        <td>Остаток на счете</td>
-                        <td>
-                          <span class="text text--currency text--size-md">1 253 456</span>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>Состояние счета</td>
-                        <td>
-                          <span class="text text--icon text-status text-status--active">активен</span>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <a href="#" class="link link--arrow" >Пополнить счет</a>
-                        </td>
-                        <td>
-                          <a href="#" class="link link--arrow" >Распределить средства</a>
-                        </td>
-                      </tr>
-                    </table>
-                  </div>
-                </div>
-              </div>
-              <div class="cell medium-6 stretch-free-height">
-                <div class="card card--table">
-                  <div class="card-devider">
-                    Установленные лимиты
-                  </div>
-                  <div class="card-section">
-                    <table class="table table--no-border unstriped">
-                      <tr>
-                        <td>
-                          Уведомление
-                        </td>
-                        <td>
-                          <span class="text text--size-md text--currency">30 000</span>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>Блокировка</td>
-                        <td>
-                          <span class="text text--size-md text--currency">1 000</span>
-                        </td>
-                      </tr>
-                    </table>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="grid-x grid-margin-x">
-              <div class="cell medium-6">
-                <div class="card card--table">
-                  <div class="card-devider">
-                    Карты
-                  </div>
-                  <div class="card-section">
-                    <div class="card-text">Выберите карту для получения дополнительной информации и управления.</div>
-                    <hr class="card-separator" />
-                    <table class="table table--no-border unstriped">
-                      <tr>
-                        <td>
-                          <span class="text text--icon text-card text-card--active">50190801875293810032</span>
-                        </td>
-                        <td>
-                          <span class="text">500 л.</span>
-                        </td>
-                        <td>
-                          <span class="text">действует</span>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <span class="text text--icon text-card text-card--active">50190801875293810032</span>
-                        </td>
-                        <td>
-                          <span class="text">500 л.</span>
-                        </td>
-                        <td>
-                          <span class="text">действует</span>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <span class="text text--icon text-card text-card--active">50190801875293810032</span>
-                        </td>
-                        <td>
-                          <span class="text">500 л.</span>
-                        </td>
-                        <td>
-                          <span class="text">действует</span>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <span class="text text--icon text-card text-card--blocked">50190801875293810032</span>
-                        </td>
-                        <td>
-                          <span class="text">500 л.</span>
-                        </td>
-                        <td>
-                          <span class="text">действует</span>
-                        </td>
-                      </tr>
-                      <tr class="utils-text-disabled">
-                        <td>
-                          <span class="text text--icon text-card text-card--arested">50190801875293810032</span>
-                        </td>
-                        <td>
-                          <span class="text">500 л.</span>
-                        </td>
-                        <td>
-                          <span class="text">действует</span>
-                        </td>
-                      </tr>
-                      <tr class="utils-text-disabled">
-                        <td>
-                          <span class="text text--icon text-card text-card--arested">50190801875293810032</span>
-                        </td>
-                        <td>
-                          <span class="text">500 л.</span>
-                        </td>
-                        <td>
-                          <span class="text">действует</span>
-                        </td>
-                      </tr>
-                    </table>
-                  </div>
-                </div>
-              </div>
-              <div class="cell medium-6">
-                <div class="card card--table">
-                  <div class="card-devider">
-                    Договоры
-                  </div>
-                  <div class="card-section">
-                    <table class="table table--no-border unstriped">
-                      <tr>
-                        <td>
-                          <span class="text">Номер договора</span>
-                        </td>
-                        <td>
-                          <span class="text text--size-md">НК21/1 - 592</span>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <span class="text">Дата заключения</span>
-                        </td>
-                        <td>
-                          <span class="text text--size-md">12.02.2013</span>
-                        </td>
-                      </tr>
-                    </table>
-                    <hr class="card-separator" />
-                    <table class="table table--no-border unstriped">
-                      <tr>
-                        <td>
-                          <span class="text">Номер договора</span>
-                        </td>
-                        <td>
-                          <span class="text text--size-md">НК21/1 - 782</span>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <span class="text">Дата заключения</span>
-                        </td>
-                        <td>
-                          <span class="text text--size-md">26.04.2015</span>
-                        </td>
-                      </tr>
-                    </table>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="tabs-panel" id="statement-tab">
-          <div class="tabs-panel-header">
-            <div class="grid-x">
-              <div class="cell medium-6 tabs-panel-header-left">
-                <span class="text">Просмотр и загрузка выписок и счетов.</span>
-              </div>
-              <div class="cell medium-6 tabs-panel-header-right">
-                <span class="text">Актуальность данных</span>
-                <button href="#" class="button button--update is-active">24.04.2019, 18:32</button>
-              </div>
-            </div>
-          </div>
-          <div class="tabs-panel-main">
-            <div class="grid-x grid-margin-x">
-              <div class="cell medium-6">
-                <div class="card card--table">
-                  <div class="card-devider">
-                    Выписки по картам
-                  </div>
-                  <div class="card-section">
-                    <table class="table table--no-border table--left-full-width unstriped">
-                      <tr>
-                        <td>
-                          <span class="text text--icon text-statement">1 - 30 апреля 2019 г.</span>
-                        </td>
-                        <td>
-                          <button class="action action--download"><svg class="icon icon--download">
-                           <use xlink:href="assets/img/symbol/sprite.svg#download">
-                        </svg></button>
-                        </td>
-                        <td>
-                          <button class="action action--search"><svg class="icon icon--search">
-                           <use xlink:href="assets/img/symbol/sprite.svg#search">
-                        </svg></button>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <span class="text text--icon text-statement">1 - 30 апреля 2019 г.</span>
-                        </td>
-                        <td>
-                          <button class="action action--download"><svg class="icon icon--download">
-                           <use xlink:href="assets/img/symbol/sprite.svg#download">
-                        </svg></button>
-                        </td>
-                        <td>
-                          <button class="action action--search"><svg class="icon icon--search">
-                           <use xlink:href="assets/img/symbol/sprite.svg#search">
-                        </svg></button>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <span class="text text--icon text-statement">1 - 30 апреля 2019 г.</span>
-                        </td>
-                        <td>
-                          <button class="action action--download"><svg class="icon icon--download">
-                           <use xlink:href="assets/img/symbol/sprite.svg#download">
-                        </svg></button>
-                        </td>
-                        <td>
-                          <button class="action action--search"><svg class="icon icon--search">
-                           <use xlink:href="assets/img/symbol/sprite.svg#search">
-                        </svg></button>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <a href="#" class="link link--arrow">Предыдущие периоды</a>
-                        </td>
-                      </tr>
-                    </table>
-                  </div>
-                </div>
-              </div>
-              <div class="cell medium-6">
-                <div class="card card--table">
-                  <div class="card-devider">
-                    Выписки по Счету
-                  </div>
-                  <div class="card-section">
-                    <table class="table table--no-border  table--left-full-width unstriped">
-                      <tr>
-                        <td>
-                          <span class="text text--icon text-acc-statement">1 - 30 апреля 2019 г.</span>
-                        </td>
-                        <td>
-                          <button class="action action--download"><svg class="icon icon--download">
-                           <use xlink:href="assets/img/symbol/sprite.svg#download">
-                        </svg></button>
-                        </td>
-                        <td>
-                          <button class="action action--search"><svg class="icon icon--search">
-                           <use xlink:href="assets/img/symbol/sprite.svg#search">
-                        </svg></button>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <span class="text text--icon text-acc-statement">1 - 30 апреля 2019 г.</span>
-                        </td>
-                        <td>
-                          <button class="action action--download"><svg class="icon icon--download">
-                           <use xlink:href="assets/img/symbol/sprite.svg#download">
-                        </svg></button>
-                        </td>
-                        <td>
-                          <button class="action action--search"><svg class="icon icon--search">
-                           <use xlink:href="assets/img/symbol/sprite.svg#search">
-                        </svg></button>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <span class="text text--icon text-acc-statement">1 - 30 апреля 2019 г.</span>
-                        </td>
-                        <td>
-                          <button class="action action--download"><svg class="icon icon--download">
-                           <use xlink:href="assets/img/symbol/sprite.svg#download">
-                        </svg></button>
-                        </td>
-                        <td>
-                          <button class="action action--search"><svg class="icon icon--search">
-                           <use xlink:href="assets/img/symbol/sprite.svg#search">
-                        </svg></button>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <a href="#" class="link link--arrow">Предыдущие периоды</a>
-                        </td>
-                      </tr>
-                    </table>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="grid-x grid-margin-x">
-              <div class="cell medium-6">
-                <div class="card card--table">
-                  <div class="card-devider">
-                    Счета
-                  </div>
-                  <div class="card-section">
-                    <table class="table table--no-border table--left-full-width unstriped">
-                      <tr>
-                        <td>
-                          <span class="text text--icon text-invoice">Счёт № 39237/И</span>
-                        </td>
-                        <td>
-                          <button class="action action--download"><svg class="icon icon--download">
-                           <use xlink:href="assets/img/symbol/sprite.svg#download">
-                        </svg></button>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <span class="text text--icon text-invoice">Счёт № 39236/И</span>
-                        </td>
-                        <td>
-                          <button class="action action--download"><svg class="icon icon--download">
-                           <use xlink:href="assets/img/symbol/sprite.svg#download">
-                        </svg></button>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <span class="text text--icon text-invoice">Счёт № 39236/И</span>
-                        </td>
-                        <td>
-                          <button class="action action--download"><svg class="icon icon--download">
-                           <use xlink:href="assets/img/symbol/sprite.svg#download">
-                        </svg></button>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <a href="#" class="link link--arrow">Предыдущие периоды</a>
-                        </td>
-                      </tr>
-                    </table>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="tabs-panel" id="cost-tab">
-          <div class="tabs-panel-header">
-            <div class="grid-x">
-              <div class="cell medium-7 tabs-panel-header-left">
-                <span class="text">Индивидуальные цены на нефтепродукты для вашего Предприятия.</span>
-              </div>
-              <div class="cell medium-5 tabs-panel-header-right">
-                <span class="text">Актуальность данных</span>
-                <button href="#" class="button button--update is-active">24.04.2019, 18:32</button>
-              </div>
-            </div>
-          </div>
-          <div class="tabs-panel-main">
-            <table class="table table--prise-list">
-              <thead>
-                <tr>
-                  <td>Вид топлива</td>
-                  <td>Цена</td>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>
-                    <div class="text text--icon text--oil text--ge">
-                      Бензин автомобильный марки Премиум Евро-95 К5 GreenEco
-                    </div>
-                  </td>
-                  <td>
-                    <span class="text text--currency">36.20</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <span class="text text--icon text--oil text--regular">Бензин автомобильный марки Премиум Евро-95 К5 GreenEco</span>
-                  </td>
-                  <td>
-                    <span class="text text--currency">36.20</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <span class="text text--icon text--oil text--ge">Бензин автомобильный марки Премиум Евро-95 К5 GreenEco</span>
-                  </td>
-                  <td>
-                    <span class="text text--currency">36.20</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <span class="text text--icon text--oil text--ge">Бензин автомобильный марки Премиум Евро-95 К5 GreenEco</span>
-                  </td>
-                  <td>
-                    <span class="text text--currency">36.20</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <span class="text text--icon text--oil text--ge">Бензин автомобильный марки Премиум Евро-95 К5 GreenEco</span>
-                  </td>
-                  <td>
-                    <span class="text text--currency">36.20</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <span class="text text--icon text--oil text--ge">Бензин автомобильный марки Премиум Евро-95 К5 GreenEco</span>
-                  </td>
-                  <td>
-                    <span class="text text--currency">36.20</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <span class="text text--icon text--oil text--ge">Бензин автомобильный марки Премиум Евро-95 К5 GreenEco</span>
-                  </td>
-                  <td>
-                    <span class="text text--currency">36.20</span>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-        <div class="tabs-panel tabs-panel--messages stretch-free-height" id="messages-tab">
-          <form action="#" class="chat stretch-free-height">
-            <div class="chat-main-content stretch-free-height" id="main-chat">
-              <div class="chat-scroller stretch-free-height">
-                <div class="chat-section">
-                  <span class="chat-section-title">Сегодня, 28.04.2019</span>
-                  <div class="chat-message">
-                    <div class="chat-message-section">
-                      <div class="chat-message-thumbnail">
-                        <img src= "assets/img/avatars/ava-user-001.jpg">
-                      </div>
-                    </div>
-                    <div class="chat-message-section">
-                      <div class="chat-message-header">
-                        <h4>ООО "Золотой Дракон"</h4>
-                        <time datetime="15.10.2018 9:21">9:21</time>
-                      </div>
-                      <p>Здравствуйте! У меня вопрос…</p>
-                    </div>
-                  </div>
-                  <div class="chat-message">
-                    <div class="chat-message-section">
-                      <div class="chat-message-thumbnail">
-                        <img src= "assets/img/avatars/ava-manager-001.jpg">
-                      </div>
-                    </div>
-                    <div class="chat-message-section">
-                      <div class="chat-message-header">
-                        <h4>Анастасия, ОБР</h4>
-                        <time datetime="15.10.2018 9:21">9:23</time>
-                      </div>
-                      <p>Добрый день! Я вас слушаю.</p>
-                    </div>
-                  </div>
-                  <div class="chat-message">
-                    <div class="chat-message-section">
-                      <div class="chat-message-thumbnail">
-                        <img src= "assets/img/avatars/ava-user-001.jpg">
-                      </div>
-                    </div>
-                    <div class="chat-message-section">
-                      <div class="chat-message-header">
-                        <h4>ООО "Золотой Дракон"</h4>
-                        <time datetime="15.10.2018 9:21">9:26</time>
-                      </div>
-                      <p>Мы бы хотели для одной из наших карт изменить виды топлива.</p>
-                      <p>Но я не могу найти, где это сделать на сайте :^(</p>
-                    </div>
-                  </div>
-                  <div class="chat-message">
-                    <div class="chat-message-section">
-                      <div class="chat-message-thumbnail">
-                        <img src= "assets/img/avatars/ava-manager-001.jpg">
-                      </div>
-                    </div>
-                    <div class="chat-message-section">
-                      <div class="chat-message-header">
-                        <h4>Анастасия, ОБР</h4>
-                        <time datetime="15.10.2018 9:21">9:23</time>
-                      </div>
-                      <p>Вам необходимо перейти в раздел "Состояние Счета" и выбрать из списка интересующую вас карту. На открывшейся странице,
-                        вы можете отметить "галочками" виды топлива, которые нужно закрепить за данной картой.
-                      </p>
-                      <p>После этого нам будет отправлена заявка на изменение видов топлива.</p>
-                      <p>Заявки выполняются в течение 24 часов с момента поступления (в рабочие дни).</p>
-                    </div>
-                  </div>
-                  <div class="chat-message">
-                    <div class="chat-message-section">
-                      <div class="chat-message-thumbnail">
-                        <img src= "assets/img/avatars/ava-user-001.jpg">
-                      </div>
-                    </div>
-                    <div class="chat-message-section">
-                      <div class="chat-message-header">
-                        <h4>ООО "Золотой Дракон"</h4>
-                        <time datetime="15.10.2018 9:21">9:26</time>
-                      </div>
-                      <p>Заявку на бланке организации прикрепляю. Все верно?</p>
-                      <a href="#" class="link link--attach-file">Заявка на ГСМ Золтой Дракон (подписано).pdf</a>
-                    </div>
-                  </div>
-                  <div class="chat-message">
-                    <div class="chat-message-section">
-                      <div class="chat-message-thumbnail">
-                        <img src= "assets/img/avatars/ava-manager-001.jpg">
-                      </div>
-                    </div>
-                    <div class="chat-message-section">
-                      <div class="chat-message-header">
-                        <h4>Анастасия, ОБР</h4>
-                        <time datetime="15.10.2018 9:21">9:23</time>
-                      </div>
-                      <p>Вам необходимо сделать заявку через раздел "Состояние счета".</p>
-                    </div>
-                  </div>
-                  <div class="chat-message">
-                    <div class="chat-message-section">
-                      <div class="chat-message-thumbnail">
-                        <img src= "assets/img/avatars/ava-user-001.jpg">
-                      </div>
-                    </div>
-                    <div class="chat-message-section">
-                      <div class="chat-message-header">
-                        <h4>ООО "Золотой Дракон"</h4>
-                        <time datetime="15.10.2018 9:21">19:07</time>
-                      </div>
-                      <p>Большое спасибо, все получилось!</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="chat-section">
-                  <span class="chat-section-title">Сегодня, 28.04.2019</span>
-                  <div class="chat-message">
-                    <div class="chat-message-section">
-                      <div class="chat-message-thumbnail">
-                        <img src= "assets/img/avatars/ava-user-001.jpg">
-                      </div>
-                    </div>
-                    <div class="chat-message-section">
-                      <div class="chat-message-header">
-                        <h4>ООО "Золотой Дракон"</h4>
-                        <time datetime="15.10.2018 9:21">9:21</time>
-                      </div>
-                      <p>Здравствуйте! У меня вопрос…</p>
-                    </div>
-                  </div>
-                  <div class="chat-message">
-                    <div class="chat-message-section">
-                      <div class="chat-message-thumbnail">
-                        <img src= "assets/img/avatars/ava-manager-001.jpg">
-                      </div>
-                    </div>
-                    <div class="chat-message-section">
-                      <div class="chat-message-header">
-                        <h4>Анастасия, ОБР</h4>
-                        <time datetime="15.10.2018 9:21">9:23</time>
-                      </div>
-                      <p>Добрый день! Я вас слушаю.</p>
-                    </div>
-                  </div>
-                  <div class="chat-message">
-                    <div class="chat-message-section">
-                      <div class="chat-message-thumbnail">
-                        <img src= "assets/img/avatars/ava-user-001.jpg">
-                      </div>
-                    </div>
-                    <div class="chat-message-section">
-                      <div class="chat-message-header">
-                        <h4>ООО "Золотой Дракон"</h4>
-                        <time datetime="15.10.2018 9:21">9:26</time>
-                      </div>
-                      <p>Мы бы хотели для одной из наших карт изменить виды топлива.</p>
-                      <p>Но я не могу найти, где это сделать на сайте :^(</p>
-                    </div>
-                  </div>
-                  <div class="chat-message">
-                    <div class="chat-message-section">
-                      <div class="chat-message-thumbnail">
-                        <img src= "assets/img/avatars/ava-manager-001.jpg">
-                      </div>
-                    </div>
-                    <div class="chat-message-section">
-                      <div class="chat-message-header">
-                        <h4>Анастасия, ОБР</h4>
-                        <time datetime="15.10.2018 9:21">9:23</time>
-                      </div>
-                      <p>Вам необходимо перейти в раздел "Состояние Счета" и выбрать из списка интересующую вас карту. На открывшейся странице,
-                        вы можете отметить "галочками" виды топлива, которые нужно закрепить за данной картой.
-                      </p>
-                      <p>После этого нам будет отправлена заявка на изменение видов топлива.</p>
-                      <p>Заявки выполняются в течение 24 часов с момента поступления (в рабочие дни).</p>
-                    </div>
-                  </div>
-                  <div class="chat-message">
-                    <div class="chat-message-section">
-                      <div class="chat-message-thumbnail">
-                        <img src= "assets/img/avatars/ava-user-001.jpg">
-                      </div>
-                    </div>
-                    <div class="chat-message-section">
-                      <div class="chat-message-header">
-                        <h4>ООО "Золотой Дракон"</h4>
-                        <time datetime="15.10.2018 9:21">9:26</time>
-                      </div>
-                      <p>Заявку на бланке организации прикрепляю. Все верно?</p>
-                      <a href="#" class="link link--attach-file">Заявка на ГСМ Золтой Дракон (подписано).pdf</a>
-                    </div>
-                  </div>
-                  <div class="chat-message">
-                    <div class="chat-message-section">
-                      <div class="chat-message-thumbnail">
-                        <img src= "assets/img/avatars/ava-manager-001.jpg">
-                      </div>
-                    </div>
-                    <div class="chat-message-section">
-                      <div class="chat-message-header">
-                        <h4>Анастасия, ОБР</h4>
-                        <time datetime="15.10.2018 9:21">9:23</time>
-                      </div>
-                      <p>Вам необходимо сделать заявку через раздел "Состояние счета".</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="chat-track">
-                <div class="chat-free">
-                  <div class="chat-bar"></div>
-                </div>
-              </div>
-            </div>
-            <textarea class="chat-message-field" name="message" rows="5" cols="40" placeholder="Текст сообщения"></textarea>
-            <div class="chat-footer">
-              <label for="exampleFileUpload" class="button button--icon button--attach-file clear secondary">
-                <span>Прикрепить файл</span>
-              </label>
-              <input type="file" id="exampleFileUpload" class="show-for-sr">
-              <button type="submit" class="button clear secondary">Отправить</button>
-            </div>
-          </form>
         </div>
       </div>
-    </main>
-    <aside class="aside cell large-4">
-      <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
-        <ul class="orbit-container">
-          <li class="orbit-slide is-active">
-            <figure class="orbit-figure">
-              <img class="orbit-image" src="assets/img/content/image_01.jpg" alt="Image 1">
-            </figure>
-          </li>
-          <li class="orbit-slide">
-            <figure class="orbit-figure">
-              <img class="orbit-image" src="assets/img/content/image_02.jpg" alt="Image 2">
-            </figure>
-          </li>
-          <li class="orbit-slide">
-            <figure class="orbit-figure">
-              <img class="orbit-image" src="assets/img/content/image_03.jpg" alt="Image 3">
-            </figure>
-          </li>
-        </ul>
-        <nav class="orbit-bullets">
-          <button class="is-active" data-slide="0">
-            <span class="show-for-sr">First slide details.</span>
-          </button>
-          <button data-slide="1">
-            <span class="show-for-sr">Second slide details.</span>
-          </button>
-          <button data-slide="2">
-            <span class="show-for-sr">Third slide details.</span>
-          </button>
-        </nav>
-      </div>
-      <section class="page-section">
-        <h2 class="page-section-title">Важная информация</h2>
-        <article class="news-post">
-          <h1 class="news-post-title">О порядке ценообразования</h1>
-          <p class="text">С 1 ноября 2018 года отменены все скидки на нефтепродукты. Отпуск нефтепродуктов на АЗС осуществляется по ценам, указанным на стеле.</p>
-          <a href="#" class="link link--arrow">Читать полностью</a>
-        </article>
-        <article class="news-post">
-          <h1 class="news-post-title">Из правил безопасности на АЗС</h1>
-          <p class="text">На основании требований нормативных документов на АЗС запрещается:</p>
-          <ul class="list list--danger">
-            <li>Выдача нефтепродуктов в пластиковую и стеклянную тару.</li>
-            <li>Налив в автотестерны и бочки, установленные непосредственно на автомобилях.</li>
+    </header>
+    <div class="page-main grid-container">
+      <div class="grid-x grid-margin-x">
+        <main class="cell large-8 stretch-free-height">
+          <ul class="tabs tabs--main-nav" data-tabs data-deep-link="true" data-update-history="true" id="main-tabs">
+            <li class="tabs-title is-active">
+              <a data-tabs-target="account-state-tab" href="#account-state-tab" class="tabs-link" aria-selected="true">
+                <svg class="icon">
+                     <use xlink:href="assets/img/symbol/sprite.svg#nav-account-state">
+                  </svg>
+                <span class="tabs-text">Состояние счета</span>
+              </a>
+            </li>
+            <li class="tabs-title">
+              <a  data-tabs-target="statement-tab" href="#statement-tab" class="tabs-link">
+                <svg class="icon">
+                     <use xlink:href="assets/img/symbol/sprite.svg#nav-statements">
+                  </svg>
+                <span class="tabs-text">Выписки</span>
+              </a>
+            </li>
+            <li class="tabs-title">
+              <a data-tabs-target="cost-tab" href="#cost-tab" class="tabs-link">
+                <svg class="icon">
+                     <use xlink:href="assets/img/symbol/sprite.svg#nav-cost">
+                  </svg>
+                <span class="tabs-text">Стоимость</span>
+              </a>
+            </li>
+            <li class="tabs-title">
+              <a data-tabs-target="messages-tab" href="#messages-tab" class="tabs-link">
+                <span class="tabs-badge" id="messageCount">1</span>
+                <span class="tabs-text">Сообщения</span>
+              </a>
+            </li>
           </ul>
-          <a href="#" class="link link--arrow">Читать полностью</a>
-        </article>
-      </section>
-    </aside>
-  </div>
-</div>
-
-<footer class="page-footer">
-  <div class="grid-container">
-    <div class="grid-x grid-margin-x">
-      <div class="cell medium-8">
-        <small>© АО «ННК-Приморнефтепродукт», 2009 - 2019</small>
-        <small>Отдел безналичных расчетов:  +7 (423) 240-31-29, 240-31-80, cardsupport@primornp.ru</small>
-      </div>
-      <div class="page-footer-right cell medium-4">
-        <small class="page-footer-dev">
-          <svg class="icon">
-                 <use xlink:href="assets/img/symbol/sprite.svg#websee-logo">
-              </svg>
-          <span>Разработка системы - WebSee</span>
-        </small>
+          <div class="tabs-content stretch-free-height" data-tabs-content="main-tabs">
+            <div class="tabs-panel is-active" id="account-state-tab">
+              <div class="tabs-panel-header">
+                <div class="grid-x">
+                  <div class="cell medium-6 tabs-panel-header-left">
+                    <span class="text">Текущее состояние вашего счета и карт.</span>
+                  </div>
+                  <div class="cell medium-6 tabs-panel-header-right">
+                    <span class="text">Актуальность данных</span>
+                    <button href="#" class="button button--update is-active">24.04.2019, 18:32</button>
+                  </div>
+                </div>
+              </div>
+              <div class="tabs-panel-main">
+                <div class="grid-x grid-margin-x">
+                  <div class="cell medium-6">
+                    <div class="card card--table">
+                      <div class="card-devider">
+                        Счет
+                      </div>
+                      <div class="card-section">
+                        <table class="table table--no-border unstriped">
+                          <tr>
+                            <td>Остаток на счете</td>
+                            <td>
+                              <span class="text text--currency text--size-md">1 253 456</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Состояние счета</td>
+                            <td>
+                              <span class="text text--icon text-status text-status--active">активен</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <a href="#" class="link link--arrow" >Пополнить счет</a>
+                            </td>
+                            <td>
+                              <a href="#" class="link link--arrow" >Распределить средства</a>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cell medium-6 stretch-free-height">
+                    <div class="card card--table">
+                      <div class="card-devider">
+                        Установленные лимиты
+                      </div>
+                      <div class="card-section">
+                        <table class="table table--no-border unstriped">
+                          <tr>
+                            <td>
+                              Уведомление
+                            </td>
+                            <td>
+                              <span class="text text--size-md text--currency">30 000</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Блокировка</td>
+                            <td>
+                              <span class="text text--size-md text--currency">1 000</span>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-x grid-margin-x">
+                  <div class="cell medium-6">
+                    <div class="card card--table">
+                      <div class="card-devider">
+                        Карты
+                      </div>
+                      <div class="card-section">
+                        <div class="card-text">Выберите карту для получения дополнительной информации и управления.</div>
+                        <hr class="card-separator" />
+                        <table class="table table--no-border unstriped">
+                          <tr>
+                            <td>
+                              <span class="text text--icon text-card text-card--active">50190801875293810032</span>
+                            </td>
+                            <td>
+                              <span class="text">500 л.</span>
+                            </td>
+                            <td>
+                              <span class="text">действует</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <span class="text text--icon text-card text-card--active">50190801875293810032</span>
+                            </td>
+                            <td>
+                              <span class="text">500 л.</span>
+                            </td>
+                            <td>
+                              <span class="text">действует</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <span class="text text--icon text-card text-card--active">50190801875293810032</span>
+                            </td>
+                            <td>
+                              <span class="text">500 л.</span>
+                            </td>
+                            <td>
+                              <span class="text">действует</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <span class="text text--icon text-card text-card--blocked">50190801875293810032</span>
+                            </td>
+                            <td>
+                              <span class="text">500 л.</span>
+                            </td>
+                            <td>
+                              <span class="text">действует</span>
+                            </td>
+                          </tr>
+                          <tr class="utils-text-disabled">
+                            <td>
+                              <span class="text text--icon text-card text-card--arested">50190801875293810032</span>
+                            </td>
+                            <td>
+                              <span class="text">500 л.</span>
+                            </td>
+                            <td>
+                              <span class="text">действует</span>
+                            </td>
+                          </tr>
+                          <tr class="utils-text-disabled">
+                            <td>
+                              <span class="text text--icon text-card text-card--arested">50190801875293810032</span>
+                            </td>
+                            <td>
+                              <span class="text">500 л.</span>
+                            </td>
+                            <td>
+                              <span class="text">действует</span>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cell medium-6">
+                    <div class="card card--table">
+                      <div class="card-devider">
+                        Договоры
+                      </div>
+                      <div class="card-section">
+                        <table class="table table--no-border unstriped">
+                          <tr>
+                            <td>
+                              <span class="text">Номер договора</span>
+                            </td>
+                            <td>
+                              <span class="text text--size-md">НК21/1 - 592</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <span class="text">Дата заключения</span>
+                            </td>
+                            <td>
+                              <span class="text text--size-md">12.02.2013</span>
+                            </td>
+                          </tr>
+                        </table>
+                        <hr class="card-separator" />
+                        <table class="table table--no-border unstriped">
+                          <tr>
+                            <td>
+                              <span class="text">Номер договора</span>
+                            </td>
+                            <td>
+                              <span class="text text--size-md">НК21/1 - 782</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <span class="text">Дата заключения</span>
+                            </td>
+                            <td>
+                              <span class="text text--size-md">26.04.2015</span>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tabs-panel" id="statement-tab">
+              <div class="tabs-panel-header">
+                <div class="grid-x">
+                  <div class="cell medium-6 tabs-panel-header-left">
+                    <span class="text">Просмотр и загрузка выписок и счетов.</span>
+                  </div>
+                  <div class="cell medium-6 tabs-panel-header-right">
+                    <span class="text">Актуальность данных</span>
+                    <button href="#" class="button button--update is-active">24.04.2019, 18:32</button>
+                  </div>
+                </div>
+              </div>
+              <div class="tabs-panel-main">
+                <div class="grid-x grid-margin-x">
+                  <div class="cell medium-6">
+                    <div class="card card--table">
+                      <div class="card-devider">
+                        Выписки по картам
+                      </div>
+                      <div class="card-section">
+                        <table class="table table--no-border table--left-full-width unstriped">
+                          <tr>
+                            <td>
+                              <span class="text text--icon text-statement">1 - 30 апреля 2019 г.</span>
+                            </td>
+                            <td>
+                              <button class="action action--download"><svg class="icon icon--download">
+                               <use xlink:href="assets/img/symbol/sprite.svg#download">
+                            </svg></button>
+                            </td>
+                            <td>
+                              <button class="action action--search"><svg class="icon icon--search">
+                               <use xlink:href="assets/img/symbol/sprite.svg#search">
+                            </svg></button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <span class="text text--icon text-statement">1 - 30 апреля 2019 г.</span>
+                            </td>
+                            <td>
+                              <button class="action action--download"><svg class="icon icon--download">
+                               <use xlink:href="assets/img/symbol/sprite.svg#download">
+                            </svg></button>
+                            </td>
+                            <td>
+                              <button class="action action--search"><svg class="icon icon--search">
+                               <use xlink:href="assets/img/symbol/sprite.svg#search">
+                            </svg></button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <span class="text text--icon text-statement">1 - 30 апреля 2019 г.</span>
+                            </td>
+                            <td>
+                              <button class="action action--download"><svg class="icon icon--download">
+                               <use xlink:href="assets/img/symbol/sprite.svg#download">
+                            </svg></button>
+                            </td>
+                            <td>
+                              <button class="action action--search"><svg class="icon icon--search">
+                               <use xlink:href="assets/img/symbol/sprite.svg#search">
+                            </svg></button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <a href="#" class="link link--arrow">Предыдущие периоды</a>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cell medium-6">
+                    <div class="card card--table">
+                      <div class="card-devider">
+                        Выписки по Счету
+                      </div>
+                      <div class="card-section">
+                        <table class="table table--no-border  table--left-full-width unstriped">
+                          <tr>
+                            <td>
+                              <span class="text text--icon text-acc-statement">1 - 30 апреля 2019 г.</span>
+                            </td>
+                            <td>
+                              <button class="action action--download"><svg class="icon icon--download">
+                               <use xlink:href="assets/img/symbol/sprite.svg#download">
+                            </svg></button>
+                            </td>
+                            <td>
+                              <button class="action action--search"><svg class="icon icon--search">
+                               <use xlink:href="assets/img/symbol/sprite.svg#search">
+                            </svg></button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <span class="text text--icon text-acc-statement">1 - 30 апреля 2019 г.</span>
+                            </td>
+                            <td>
+                              <button class="action action--download"><svg class="icon icon--download">
+                               <use xlink:href="assets/img/symbol/sprite.svg#download">
+                            </svg></button>
+                            </td>
+                            <td>
+                              <button class="action action--search"><svg class="icon icon--search">
+                               <use xlink:href="assets/img/symbol/sprite.svg#search">
+                            </svg></button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <span class="text text--icon text-acc-statement">1 - 30 апреля 2019 г.</span>
+                            </td>
+                            <td>
+                              <button class="action action--download"><svg class="icon icon--download">
+                               <use xlink:href="assets/img/symbol/sprite.svg#download">
+                            </svg></button>
+                            </td>
+                            <td>
+                              <button class="action action--search"><svg class="icon icon--search">
+                               <use xlink:href="assets/img/symbol/sprite.svg#search">
+                            </svg></button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <a href="#" class="link link--arrow">Предыдущие периоды</a>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-x grid-margin-x">
+                  <div class="cell medium-6">
+                    <div class="card card--table">
+                      <div class="card-devider">
+                        Счета
+                      </div>
+                      <div class="card-section">
+                        <table class="table table--no-border table--left-full-width unstriped">
+                          <tr>
+                            <td>
+                              <span class="text text--icon text-invoice">Счёт № 39237/И</span>
+                            </td>
+                            <td>
+                              <button class="action action--download"><svg class="icon icon--download">
+                               <use xlink:href="assets/img/symbol/sprite.svg#download">
+                            </svg></button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <span class="text text--icon text-invoice">Счёт № 39236/И</span>
+                            </td>
+                            <td>
+                              <button class="action action--download"><svg class="icon icon--download">
+                               <use xlink:href="assets/img/symbol/sprite.svg#download">
+                            </svg></button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <span class="text text--icon text-invoice">Счёт № 39236/И</span>
+                            </td>
+                            <td>
+                              <button class="action action--download"><svg class="icon icon--download">
+                               <use xlink:href="assets/img/symbol/sprite.svg#download">
+                            </svg></button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <a href="#" class="link link--arrow">Предыдущие периоды</a>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tabs-panel" id="cost-tab">
+              <div class="tabs-panel-header">
+                <div class="grid-x">
+                  <div class="cell medium-7 tabs-panel-header-left">
+                    <span class="text">Индивидуальные цены на нефтепродукты для вашего Предприятия.</span>
+                  </div>
+                  <div class="cell medium-5 tabs-panel-header-right">
+                    <span class="text">Актуальность данных</span>
+                    <button href="#" class="button button--update is-active">24.04.2019, 18:32</button>
+                  </div>
+                </div>
+              </div>
+              <div class="tabs-panel-main">
+                <table class="table table--prise-list">
+                  <thead>
+                    <tr>
+                      <td>Вид топлива</td>
+                      <td>Цена</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="text text--icon text--oil text--ge">
+                          Бензин автомобильный марки Премиум Евро-95 К5 GreenEco
+                        </div>
+                      </td>
+                      <td>
+                        <span class="text text--currency">36.20</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span class="text text--icon text--oil text--regular">Бензин автомобильный марки Премиум Евро-95 К5 GreenEco</span>
+                      </td>
+                      <td>
+                        <span class="text text--currency">36.20</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span class="text text--icon text--oil text--ge">Бензин автомобильный марки Премиум Евро-95 К5 GreenEco</span>
+                      </td>
+                      <td>
+                        <span class="text text--currency">36.20</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span class="text text--icon text--oil text--ge">Бензин автомобильный марки Премиум Евро-95 К5 GreenEco</span>
+                      </td>
+                      <td>
+                        <span class="text text--currency">36.20</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span class="text text--icon text--oil text--ge">Бензин автомобильный марки Премиум Евро-95 К5 GreenEco</span>
+                      </td>
+                      <td>
+                        <span class="text text--currency">36.20</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span class="text text--icon text--oil text--ge">Бензин автомобильный марки Премиум Евро-95 К5 GreenEco</span>
+                      </td>
+                      <td>
+                        <span class="text text--currency">36.20</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span class="text text--icon text--oil text--ge">Бензин автомобильный марки Премиум Евро-95 К5 GreenEco</span>
+                      </td>
+                      <td>
+                        <span class="text text--currency">36.20</span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="tabs-panel tabs-panel--messages stretch-free-height" id="messages-tab">
+              <form action="#" class="chat stretch-free-height">
+                <div class="chat-main-content stretch-free-height" id="main-chat">
+                  <div class="chat-scroller stretch-free-height">
+                    <div class="chat-section">
+                      <span class="chat-section-title">Сегодня, 28.04.2019</span>
+                      <div class="chat-message">
+                        <div class="chat-message-section">
+                          <div class="chat-message-thumbnail">
+                            <img src= "assets/img/avatars/ava-user-001.jpg">
+                          </div>
+                        </div>
+                        <div class="chat-message-section">
+                          <div class="chat-message-header">
+                            <h4>ООО "Золотой Дракон"</h4>
+                            <time datetime="15.10.2018 9:21">9:21</time>
+                          </div>
+                          <p>Здравствуйте! У меня вопрос…</p>
+                        </div>
+                      </div>
+                      <div class="chat-message">
+                        <div class="chat-message-section">
+                          <div class="chat-message-thumbnail">
+                            <img src= "assets/img/avatars/ava-manager-001.jpg">
+                          </div>
+                        </div>
+                        <div class="chat-message-section">
+                          <div class="chat-message-header">
+                            <h4>Анастасия, ОБР</h4>
+                            <time datetime="15.10.2018 9:21">9:23</time>
+                          </div>
+                          <p>Добрый день! Я вас слушаю.</p>
+                        </div>
+                      </div>
+                      <div class="chat-message">
+                        <div class="chat-message-section">
+                          <div class="chat-message-thumbnail">
+                            <img src= "assets/img/avatars/ava-user-001.jpg">
+                          </div>
+                        </div>
+                        <div class="chat-message-section">
+                          <div class="chat-message-header">
+                            <h4>ООО "Золотой Дракон"</h4>
+                            <time datetime="15.10.2018 9:21">9:26</time>
+                          </div>
+                          <p>Мы бы хотели для одной из наших карт изменить виды топлива.</p>
+                          <p>Но я не могу найти, где это сделать на сайте :^(</p>
+                        </div>
+                      </div>
+                      <div class="chat-message">
+                        <div class="chat-message-section">
+                          <div class="chat-message-thumbnail">
+                            <img src= "assets/img/avatars/ava-manager-001.jpg">
+                          </div>
+                        </div>
+                        <div class="chat-message-section">
+                          <div class="chat-message-header">
+                            <h4>Анастасия, ОБР</h4>
+                            <time datetime="15.10.2018 9:21">9:23</time>
+                          </div>
+                          <p>Вам необходимо перейти в раздел "Состояние Счета" и выбрать из списка интересующую вас карту. На открывшейся странице,
+                            вы можете отметить "галочками" виды топлива, которые нужно закрепить за данной картой.
+                          </p>
+                          <p>После этого нам будет отправлена заявка на изменение видов топлива.</p>
+                          <p>Заявки выполняются в течение 24 часов с момента поступления (в рабочие дни).</p>
+                        </div>
+                      </div>
+                      <div class="chat-message">
+                        <div class="chat-message-section">
+                          <div class="chat-message-thumbnail">
+                            <img src= "assets/img/avatars/ava-user-001.jpg">
+                          </div>
+                        </div>
+                        <div class="chat-message-section">
+                          <div class="chat-message-header">
+                            <h4>ООО "Золотой Дракон"</h4>
+                            <time datetime="15.10.2018 9:21">9:26</time>
+                          </div>
+                          <p>Заявку на бланке организации прикрепляю. Все верно?</p>
+                          <a href="#" class="link link--attach-file">Заявка на ГСМ Золтой Дракон (подписано).pdf</a>
+                        </div>
+                      </div>
+                      <div class="chat-message">
+                        <div class="chat-message-section">
+                          <div class="chat-message-thumbnail">
+                            <img src= "assets/img/avatars/ava-manager-001.jpg">
+                          </div>
+                        </div>
+                        <div class="chat-message-section">
+                          <div class="chat-message-header">
+                            <h4>Анастасия, ОБР</h4>
+                            <time datetime="15.10.2018 9:21">9:23</time>
+                          </div>
+                          <p>Вам необходимо сделать заявку через раздел "Состояние счета".</p>
+                        </div>
+                      </div>
+                      <div class="chat-message">
+                        <div class="chat-message-section">
+                          <div class="chat-message-thumbnail">
+                            <img src= "assets/img/avatars/ava-user-001.jpg">
+                          </div>
+                        </div>
+                        <div class="chat-message-section">
+                          <div class="chat-message-header">
+                            <h4>ООО "Золотой Дракон"</h4>
+                            <time datetime="15.10.2018 9:21">19:07</time>
+                          </div>
+                          <p>Большое спасибо, все получилось!</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="chat-section">
+                      <span class="chat-section-title">Сегодня, 28.04.2019</span>
+                      <div class="chat-message">
+                        <div class="chat-message-section">
+                          <div class="chat-message-thumbnail">
+                            <img src= "assets/img/avatars/ava-user-001.jpg">
+                          </div>
+                        </div>
+                        <div class="chat-message-section">
+                          <div class="chat-message-header">
+                            <h4>ООО "Золотой Дракон"</h4>
+                            <time datetime="15.10.2018 9:21">9:21</time>
+                          </div>
+                          <p>Здравствуйте! У меня вопрос…</p>
+                        </div>
+                      </div>
+                      <div class="chat-message">
+                        <div class="chat-message-section">
+                          <div class="chat-message-thumbnail">
+                            <img src= "assets/img/avatars/ava-manager-001.jpg">
+                          </div>
+                        </div>
+                        <div class="chat-message-section">
+                          <div class="chat-message-header">
+                            <h4>Анастасия, ОБР</h4>
+                            <time datetime="15.10.2018 9:21">9:23</time>
+                          </div>
+                          <p>Добрый день! Я вас слушаю.</p>
+                        </div>
+                      </div>
+                      <div class="chat-message">
+                        <div class="chat-message-section">
+                          <div class="chat-message-thumbnail">
+                            <img src= "assets/img/avatars/ava-user-001.jpg">
+                          </div>
+                        </div>
+                        <div class="chat-message-section">
+                          <div class="chat-message-header">
+                            <h4>ООО "Золотой Дракон"</h4>
+                            <time datetime="15.10.2018 9:21">9:26</time>
+                          </div>
+                          <p>Мы бы хотели для одной из наших карт изменить виды топлива.</p>
+                          <p>Но я не могу найти, где это сделать на сайте :^(</p>
+                        </div>
+                      </div>
+                      <div class="chat-message">
+                        <div class="chat-message-section">
+                          <div class="chat-message-thumbnail">
+                            <img src= "assets/img/avatars/ava-manager-001.jpg">
+                          </div>
+                        </div>
+                        <div class="chat-message-section">
+                          <div class="chat-message-header">
+                            <h4>Анастасия, ОБР</h4>
+                            <time datetime="15.10.2018 9:21">9:23</time>
+                          </div>
+                          <p>Вам необходимо перейти в раздел "Состояние Счета" и выбрать из списка интересующую вас карту. На открывшейся странице,
+                            вы можете отметить "галочками" виды топлива, которые нужно закрепить за данной картой.
+                          </p>
+                          <p>После этого нам будет отправлена заявка на изменение видов топлива.</p>
+                          <p>Заявки выполняются в течение 24 часов с момента поступления (в рабочие дни).</p>
+                        </div>
+                      </div>
+                      <div class="chat-message">
+                        <div class="chat-message-section">
+                          <div class="chat-message-thumbnail">
+                            <img src= "assets/img/avatars/ava-user-001.jpg">
+                          </div>
+                        </div>
+                        <div class="chat-message-section">
+                          <div class="chat-message-header">
+                            <h4>ООО "Золотой Дракон"</h4>
+                            <time datetime="15.10.2018 9:21">9:26</time>
+                          </div>
+                          <p>Заявку на бланке организации прикрепляю. Все верно?</p>
+                          <a href="#" class="link link--attach-file">Заявка на ГСМ Золтой Дракон (подписано).pdf</a>
+                        </div>
+                      </div>
+                      <div class="chat-message">
+                        <div class="chat-message-section">
+                          <div class="chat-message-thumbnail">
+                            <img src= "assets/img/avatars/ava-manager-001.jpg">
+                          </div>
+                        </div>
+                        <div class="chat-message-section">
+                          <div class="chat-message-header">
+                            <h4>Анастасия, ОБР</h4>
+                            <time datetime="15.10.2018 9:21">9:23</time>
+                          </div>
+                          <p>Вам необходимо сделать заявку через раздел "Состояние счета".</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="chat-track">
+                    <div class="chat-free">
+                      <div class="chat-bar"></div>
+                    </div>
+                  </div>
+                </div>
+                <textarea class="chat-message-field" name="message" rows="5" cols="40" placeholder="Текст сообщения"></textarea>
+                <div class="chat-footer">
+                  <label for="exampleFileUpload" class="button button--icon button--attach-file clear secondary">
+                    <span>Прикрепить файл</span>
+                  </label>
+                  <input type="file" id="exampleFileUpload" class="show-for-sr">
+                  <button type="submit" class="button clear secondary">Отправить</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </main>
+        <aside class="aside cell large-4">
+          <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+            <ul class="orbit-container">
+              <li class="orbit-slide is-active">
+                <figure class="orbit-figure">
+                  <img class="orbit-image" src="assets/img/content/image_01.jpg" alt="Image 1">
+                </figure>
+              </li>
+              <li class="orbit-slide">
+                <figure class="orbit-figure">
+                  <img class="orbit-image" src="assets/img/content/image_02.jpg" alt="Image 2">
+                </figure>
+              </li>
+              <li class="orbit-slide">
+                <figure class="orbit-figure">
+                  <img class="orbit-image" src="assets/img/content/image_03.jpg" alt="Image 3">
+                </figure>
+              </li>
+            </ul>
+            <nav class="orbit-bullets">
+              <button class="is-active" data-slide="0">
+                <span class="show-for-sr">First slide details.</span>
+              </button>
+              <button data-slide="1">
+                <span class="show-for-sr">Second slide details.</span>
+              </button>
+              <button data-slide="2">
+                <span class="show-for-sr">Third slide details.</span>
+              </button>
+            </nav>
+          </div>
+          <section class="page-section">
+            <h2 class="page-section-title">Важная информация</h2>
+            <article class="news-post">
+              <h1 class="news-post-title">О порядке ценообразования</h1>
+              <p class="text">С 1 ноября 2018 года отменены все скидки на нефтепродукты. Отпуск нефтепродуктов на АЗС осуществляется по ценам, указанным на стеле.</p>
+              <a href="#" class="link link--arrow">Читать полностью</a>
+            </article>
+            <article class="news-post">
+              <h1 class="news-post-title">Из правил безопасности на АЗС</h1>
+              <p class="text">На основании требований нормативных документов на АЗС запрещается:</p>
+              <ul class="list list--danger">
+                <li>Выдача нефтепродуктов в пластиковую и стеклянную тару.</li>
+                <li>Налив в автотестерны и бочки, установленные непосредственно на автомобилях.</li>
+              </ul>
+              <a href="#" class="link link--arrow">Читать полностью</a>
+            </article>
+          </section>
+        </aside>
       </div>
     </div>
+    
+    <footer class="page-footer">
+      <div class="grid-container">
+        <div class="grid-x grid-margin-x">
+          <div class="cell medium-8">
+            <small>© АО «ННК-Приморнефтепродукт», 2009 - 2019</small>
+            <small>Отдел безналичных расчетов:  +7 (423) 240-31-29, 240-31-80, cardsupport@primornp.ru</small>
+          </div>
+          <div class="page-footer-right cell medium-4">
+            <small class="page-footer-dev">
+              <svg class="icon">
+                     <use xlink:href="assets/img/symbol/sprite.svg#websee-logo">
+                  </svg>
+              <span>Разработка системы - WebSee</span>
+            </small>
+          </div>
+        </div>
+      </div>
+    </footer>
   </div>
-</footer>
 <script src="assets/js/app.js"></script>
 </body>
 </html>
