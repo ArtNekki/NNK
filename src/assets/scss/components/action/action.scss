@@ -1,0 +1,24 @@
+.action {
+  display: block;
+  width: 24px;
+  height: 24px;
+
+  &--download {
+    .icon {
+      fill: $orange;
+    }
+  }
+
+  &--search {
+    width: 24px;
+    height: 24px;
+    fill: none;
+    stroke: $orange;
+  }
+
+  .icon {
+    width: inherit;
+    height: inherit;
+  }
+
+}
