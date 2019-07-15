@@ -45,6 +45,18 @@
         background-color: $light-gray;
       }
     }
+
+    @include hover {
+      color: lighten($orange, 20%);
+    }
+
+    @include active {
+      color: lighten($orange, 20%);
+    }
+
+    @include focus {
+      color: lighten($orange, 20%);
+    }
   }
 
   &-close {

@@ -20,8 +20,7 @@
 }
 
 @mixin main-nav-link-active() {
-  font-weight: 500;
-  color: $black;
+  color: $orange;
   border-color: $orange;
 }
 

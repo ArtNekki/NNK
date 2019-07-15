@@ -1,9 +1,10 @@
 .list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
   &--danger {
-    margin: 0;
-    margin-bottom: 0.5rem;
-    padding: 0;
-    list-style-type: none;
+    margin-bottom: 1rem;
   }
 
   &--danger li {
@@ -19,8 +20,15 @@
       transform: translateY(-50%);
       width: 20px;
       height: 20px;
-      border-radius: 50%;
-      background-color: red;
+      background: url("danger");
+    }
+
+    &:first-child {
+      margin-bottom: 0.5rem;
+
+      // @include breakpoint(medium) {
+      //
+      // }
     }
   }
 }

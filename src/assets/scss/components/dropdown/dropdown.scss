@@ -1,30 +1,40 @@
-.dropdown--contracts {
+.dropdown {
 
-  button.dropdown {
-    margin-bottom: 0;
-    padding-top: 0.6em;
-    padding-bottom: 0.4em;
-    padding-right: 0.3em;
-    padding-left: 0.5em;
-    font-size: 13px;
-    color: $medium-gray;
-    border-bottom: 1px solid $light-gray;
-    background: none;
-    transition: none;
+  &--contracts {
 
-    @include breakpoint(medium) {
-      margin-right: 0.7em;
-      margin-left: 1.8em;
-      padding-bottom: 0.6em;
+    button.dropdown {
+      margin-bottom: 0;
+      padding-top: 0.6em;
+      padding-bottom: 0.4em;
+      padding-right: 0.3em;
+      padding-left: 0.5em;
+      font-size: 13px;
+      color: $medium-gray;
+      border-bottom: 1px solid $light-gray;
+      background: none;
+      transition: none;
+
+      @include breakpoint(medium) {
+        margin-right: 0.7em;
+        margin-left: 1.8em;
+        padding-bottom: 0.6em;
+      }
+
+      &::after {
+        width: 12px;
+        height: 8px;
+        top: 0.3em;
+        background: url("arrow-down");
+        background-repeat: no-repeat;
+        border: none;
+      }
     }
+  }
 
-    &::after {
-      width: 12px;
-      height: 8px;
-      top: 0.3em;
-      background: url("arrow-down");
-      background-repeat: no-repeat;
-      border: none;
+  &-pane {
+
+    .dropdown--contracts &.is-open {
+      transform: translateY(-1px);
     }
   }
 }
