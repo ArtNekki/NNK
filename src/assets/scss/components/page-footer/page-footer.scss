@@ -18,7 +18,22 @@
     .icon {
       width: 24px;
       height: 12px;
+      vertical-align: middle;
       fill: $light-gray;
+    }
+
+    span {
+      margin-left: 0.3rem;
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+
+  &-right {
+    @include breakpoint(medium) {
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
     }
   }
 }
