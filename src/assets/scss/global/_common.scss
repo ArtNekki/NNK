@@ -4,20 +4,3 @@ body {
   font-size: 13px;
   color: $medium-gray;
 }
-
-body {
-  @include breakpoint(medium) {
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-.page {
-  &--user-panel-opened {
-    overflow: hidden;
-
-    body {
-      position: fixed;
-    }
-  }
-}

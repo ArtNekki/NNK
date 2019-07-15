@@ -24,10 +24,12 @@
     </script>
   </head>
 <body>
-{{> pageHeader}}
-{{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
-{{> body}}
-{{> pageFooter}}
+  <div class="page__inner">
+    {{> pageHeader}}
+    {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
+    {{> body}}
+    {{> pageFooter}}
+  </div>
 <script src="{{root}}assets/js/app.js"></script>
 </body>
 </html>
