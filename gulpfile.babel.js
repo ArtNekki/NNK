@@ -20,6 +20,7 @@ import cheerio       from 'gulp-cheerio';
 import replace       from 'gulp-replace';
 import postcss       from 'gulp-postcss';
 import postcssSVG    from 'postcss-svg';
+import ghPages       from 'gulp-gh-pages';
 
 // Load all Gulp plugins into one variable
 const $ = plugins();
@@ -43,6 +44,9 @@ gulp.task('build',
 // Build the site, run the server, and watch for file changes
 gulp.task('default',
   gulp.series('build', server, watch));
+
+// Load to github
+gulp.task('deploy', deploy);
 
 // Delete the "dist" folder
 // This happens every time a build starts
@@ -151,6 +155,11 @@ function images() {
     ])))
     .pipe(gulp.dest(PATHS.dist + '/assets/img'));
 }
+
+function deploy() {
+  return gulp.src('./dist/**/*').pipe(ghPages());
+}
+
 
 function svg() {
   return gulp.src('src/assets/img/svg/*.svg')
