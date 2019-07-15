@@ -89,57 +89,32 @@
     top: -1rem;
     padding-right: 4rem;
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 500;
     color: #666666;
     background-color: $white;
+  }
 
-    // &::after {
-    //   content: "";
-    //   position: absolute;
-    //   top: 0;
-    //   left: 20px;
-    //   right: 20px;
-    //   border-top: 1px solid $light-gray;
-    // }
+  &-message-field {
+    margin-top: 1rem;
+    padding: 1.2rem 1rem;
+    border: 1px solid $light-gray;
+    border-radius: 0.4rem;
+    font-size: 14px;
+    color: $medium-gray;
+    resize: none;
+
+    &[rows] {
+      height: 106px;
+    }
+
+    &:focus {
+      box-shadow: 0 0 2px 0 $light-gray;
+      border-color: darken($light-gray, 10%);
+    }
+  }
+
+  &-footer {
+    display: flex;
+    justify-content: space-between;
   }
 }
-
-
-// .baron {
-//
-//
-//   &__scroller {
-//
-//   }
-//
-//   &__track {
-//
-//   }
-//
-//   &__free {
-//
-//   }
-//
-//   &__bar {
-//
-//   }
-
-  // &__control {
-  //   position: absolute;
-  //   width: 8px;
-  //   height: 8px;
-  //   font-size: 7px;
-  //   cursor: pointer;
-  //   color: darken($gray, 15%);
-  //   background-color: $white;
-  //
-  //   &--up {
-  //     top: 0;
-  //   }
-  //
-  //   &--down {
-  //     bottom: 0;
-  //     padding-top: 1px;
-  //   }
-  // }
-// }

@@ -1,5 +1,11 @@
 .button {
   outline: none;
+  font-size: 13px;
+  font-weight: 400;
+
+  &.clear {
+    padding: 0;
+  }
 
   &--update {
     position: relative;
@@ -40,5 +46,35 @@
       animation-duration: 2s;
       animation-iteration-count: infinite;
     }
+  }
+
+  &--icon {
+    &::before {
+      vertical-align: middle;
+    }
+
+    span {
+      padding-left: 1rem;
+    }
+  }
+
+  &--attach-file {
+
+    &::before {
+      content: "";
+      width: 18px;
+      height: 23px;
+      display: inline-block;
+      background-image: url("attach-file");
+      background-repeat: no-repeat;
+
+      @include hover() {
+        opacity: 0.7;
+      }
+    }
+  }
+
+  span {
+    vertical-align: middle;
   }
 }

@@ -70,7 +70,7 @@ $global-width: rem-calc(1480);
 $global-lineheight: 1.5;
 $foundation-palette: (
   primary: #1779ba,
-  secondary: #767676,
+  secondary: #e84e0f,
   success: #3adb76,
   warning: #ffae00,
   alert: #cc4b37,
@@ -298,8 +298,8 @@ $button-sizes: (
 );
 $button-palette: $foundation-palette;
 $button-opacity-disabled: 0.25;
-$button-background-hover-lightness: -20%;
-$button-hollow-hover-lightness: -50%;
+$button-background-hover-lightness: 20%;
+$button-hollow-hover-lightness: 35%;
 $button-transition: background-color 0.25s ease-out, color 0.25s ease-out;
 $button-responsive-expanded: false;
 

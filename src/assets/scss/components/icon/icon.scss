@@ -1,0 +1,10 @@
+.icon {
+  display: inline-block;
+
+  &--attach-file {
+    width: 18px;
+    height: 23px;
+    fill: none;
+    stroke: $orange;
+  }
+}

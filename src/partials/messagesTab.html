@@ -208,9 +208,12 @@
       </div>
     </div>
   </div>
-  <textarea class="chat-message-field" name="message" rows="4" cols="40"></textarea>
+  <textarea class="chat-message-field" name="message" rows="5" cols="40" placeholder="Текст сообщения"></textarea>
   <div class="chat-footer">
-    <button class="button">Прикрепить файл</button>
-    <button type="submit" class="button">Отправить</button>
+    <label for="exampleFileUpload" class="button button--icon button--attach-file clear secondary">
+      <span>Прикрепить файл</span>
+    </label>
+    <input type="file" id="exampleFileUpload" class="show-for-sr">
+    <button type="submit" class="button clear secondary">Отправить</button>
   </div>
 </form>
