@@ -7,7 +7,6 @@ export default class MainNav {
   _onLoad() {
     this._container.addEventListener('click', this._onClick.bind(this));
     this._currentActiveItem = this._container.querySelector('.is-active');
-    this._closableContainer = this._container.closest('[data-closable]');
   }
 
   _onClick(e) {
@@ -16,7 +15,7 @@ export default class MainNav {
 
     if (link) {
       this.changeActiveItem(link.getAttribute('href'));
-      this._closableContainer.style.display = 'none';
+      document.documentElement.classList.remove('page--user-panel-opened');
     }
   }
 

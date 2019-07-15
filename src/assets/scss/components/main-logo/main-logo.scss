@@ -4,10 +4,15 @@
 
   &-icon {
     display: inline-block;
-    width: 100px;
-    height: 40px;
+    width: 75px;
+    height: 30px;
     background-image: url("main-logo");
     background-repeat: no-repeat;
+
+    @include breakpoint(medium) {
+      width: 100px;
+      height: 40px;
+    }
   }
 
   &-text {

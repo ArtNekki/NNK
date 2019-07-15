@@ -11,3 +11,13 @@ body {
     flex-direction: column;
   }
 }
+
+.page {
+  &--user-panel-opened {
+    overflow: hidden;
+
+    body {
+      position: fixed;
+    }
+  }
+}

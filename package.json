@@ -16,6 +16,7 @@
     "jquery": "^3.2.1",
     "motion-ui": "^2.0.3",
     "postcss-svg": "^3.0.0",
+    "svg4everybody": "^2.1.9",
     "what-input": "^5.1.2"
   },
   "devDependencies": {

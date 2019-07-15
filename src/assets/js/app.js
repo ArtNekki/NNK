@@ -1,5 +1,6 @@
 import $ from 'jquery';
 import 'what-input';
+import svg4everybody from 'svg4everybody';
 import './modules/page-header/index';
 import './modules/main-nav/index';
 import './modules/chat/index';
@@ -18,3 +19,7 @@ require('foundation-sites');
 
 
 $(document).foundation();
+
+$(document).ready(function () {
+    svg4everybody({});
+});

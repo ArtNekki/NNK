@@ -10,7 +10,6 @@
   &-left {
     margin-right: auto;
     display: flex;
-    align-items: center;
     flex: 1 1 auto;
 
     @include breakpoint(medium) {
