@@ -1,6 +1,6 @@
 .news-post {
-  margin-top: 1.2rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.4rem;
+  padding-top: 1.2rem;
 
   &-title {
     font-size: 13px;
@@ -9,7 +9,12 @@
   }
 
   p {
+    margin-bottom: 0.5rem;
     font-size: 13px;
     color: $medium-gray;
+  }
+
+  & + & {
+    border-top: 1px solid $light-gray;
   }
 }
