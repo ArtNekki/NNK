@@ -89,13 +89,13 @@
 
   &-panel-header {
     margin-bottom: 20px;
-    padding-top: 7px;
+    padding-top: 2px;
     padding-bottom: 8px;
     border-bottom: 1px solid $light-gray;
   }
 
   &-panel-header-left {
-
+    padding-top: 0.5rem;
   }
 
   &-panel-header-right {

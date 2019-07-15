@@ -12,19 +12,23 @@
 <div class="tabs-panel-main">
   <div class="grid-x grid-margin-x">
     <div class="cell large-6">
-      <div class="card">
+      <div class="card card--table">
         <div class="card-devider">
           Счет
         </div>
         <div class="card-section">
-          <table>
+          <table class="table table--no-border unstriped">
             <tr>
               <td>Остаток на счете</td>
-              <td>1 253 456</td>
+              <td>
+                <span class="text text--currency text--size-md">1 253 456</span>
+              </td>
             </tr>
             <tr>
               <td>Состояние счета</td>
-              <td>активен</td>
+              <td>
+                <span class="text text--icon text-status text-status--active">активен</span>
+              </td>
             </tr>
             <tr>
               <td>
@@ -38,20 +42,26 @@
         </div>
       </div>
     </div>
-    <div class="cell large-6">
-      <div class="card">
+    <div class="cell large-6 stretch-free-height">
+      <div class="card card--table">
         <div class="card-devider">
           Установленные лимиты
         </div>
         <div class="card-section">
-          <table>
+          <table class="table table--no-border unstriped">
             <tr>
-              <td>Уведомление</td>
-              <td>30 000</td>
+              <td>
+                Уведомление
+              </td>
+              <td>
+                <span class="text text--size-md text--currency">30 000</span>
+              </td>
             </tr>
             <tr>
               <td>Блокировка</td>
-              <td>1 000</td>
+              <td>
+                <span class="text text--size-md text--currency">1 000</span>
+              </td>
             </tr>
           </table>
         </div>
@@ -60,18 +70,17 @@
   </div>
   <div class="grid-x grid-margin-x">
     <div class="cell large-6">
-      <div class="card">
+      <div class="card card--table">
         <div class="card-devider">
           Карты
         </div>
         <div class="card-section">
-          <div class="cart-section-top">
-            Выберите карту для получения дополнительной информации и управления.
-          </div>
-          <table>
+          <div class="card-text">Выберите карту для получения дополнительной информации и управления.</div>
+          <hr class="card-separator" />
+          <table class="table table--no-border unstriped">
             <tr>
               <td>
-                <span class="invoice">50190801875293810032</span>
+                <span class="text text--icon text-invoice text-invoice--active">50190801875293810032</span>
               </td>
               <td>
                 <span class="text">500 л.</span>
@@ -82,7 +91,7 @@
             </tr>
             <tr>
               <td>
-                <span class="invoice">50190801875293810032</span>
+                <span class="text text--icon text-invoice text-invoice--active">50190801875293810032</span>
               </td>
               <td>
                 <span class="text">500 л.</span>
@@ -93,7 +102,7 @@
             </tr>
             <tr>
               <td>
-                <span class="invoice">50190801875293810032</span>
+                <span class="text text--icon text-invoice text-invoice--active">50190801875293810032</span>
               </td>
               <td>
                 <span class="text">500 л.</span>
@@ -104,7 +113,7 @@
             </tr>
             <tr>
               <td>
-                <span class="invoice">50190801875293810032</span>
+                <span class="text text--icon text-invoice text-invoice--blocked">50190801875293810032</span>
               </td>
               <td>
                 <span class="text">500 л.</span>
@@ -113,9 +122,9 @@
                 <span class="text">действует</span>
               </td>
             </tr>
-            <tr>
+            <tr class="utils-text-disabled">
               <td>
-                <span class="invoice">50190801875293810032</span>
+                <span class="text text--icon text-invoice text-invoice--arested">50190801875293810032</span>
               </td>
               <td>
                 <span class="text">500 л.</span>
@@ -124,9 +133,9 @@
                 <span class="text">действует</span>
               </td>
             </tr>
-            <tr>
+            <tr class="utils-text-disabled">
               <td>
-                <span class="invoice">50190801875293810032</span>
+                <span class="text text--icon text-invoice text-invoice--arested">50190801875293810032</span>
               </td>
               <td>
                 <span class="text">500 л.</span>
@@ -140,18 +149,18 @@
       </div>
     </div>
     <div class="cell large-6">
-      <div class="card">
+      <div class="card card--table">
         <div class="card-devider">
           Договоры
         </div>
         <div class="card-section">
-          <table>
+          <table class="table table--no-border unstriped">
             <tr>
               <td>
                 <span class="text">Номер договора</span>
               </td>
               <td>
-                <span class="text">НК21/1 - 592</span>
+                <span class="text text--size-md">НК21/1 - 592</span>
               </td>
             </tr>
             <tr>
@@ -159,17 +168,18 @@
                 <span class="text">Дата заключения</span>
               </td>
               <td>
-                <span class="text">12.02.2013</span>
+                <span class="text text--size-md">12.02.2013</span>
               </td>
             </tr>
           </table>
-          <table>
+          <hr class="card-separator" />
+          <table class="table table--no-border unstriped">
             <tr>
               <td>
                 <span class="text">Номер договора</span>
               </td>
               <td>
-                <span class="text">НК21/1 - 782</span>
+                <span class="text text--size-md">НК21/1 - 782</span>
               </td>
             </tr>
             <tr>
@@ -177,7 +187,7 @@
                 <span class="text">Дата заключения</span>
               </td>
               <td>
-                <span class="text">26.04.2015</span>
+                <span class="text text--size-md">26.04.2015</span>
               </td>
             </tr>
           </table>

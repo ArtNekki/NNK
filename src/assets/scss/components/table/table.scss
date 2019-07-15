@@ -1,0 +1,75 @@
+.table {
+
+  thead {
+
+    tr {
+      background: transparent;
+    }
+
+    td {
+      font-weight: 400;
+    }
+  }
+
+  &--no-border {
+    border: none;
+
+    thead,
+    tbody,
+    tr,
+    td {
+      border: none !important;
+    }
+  }
+
+  &--devider {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border: 1px solid $light-gray;
+  }
+
+  &.table--prise-list {
+    border: none;
+
+    thead {
+      background: none;
+      border-top: none;
+      border-right: none;
+      border-left: none;
+      border-bottom-color: $light-gray;
+
+      td {
+        padding-top: 0;
+        padding-left: 1rem;
+        padding-bottom: 0.6rem;
+      }
+    }
+
+    tbody {
+      border-left: none;
+      border-right: none;
+    }
+
+    tr {
+      border-bottom: 1px solid $light-gray;
+    }
+
+    th, td {
+      padding: 0.9rem 1.525rem 0.9rem;
+    }
+
+    td:first-child {
+      width: 100%;
+    }
+
+    td:last-child {
+      padding-right: 3.7rem;
+      padding-left: 0.5rem;
+    }
+  }
+
+  td {
+    font-size: 13px;
+    color: $black;
+  }
+}
