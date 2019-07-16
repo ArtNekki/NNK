@@ -41,4 +41,8 @@
       background-repeat: no-repeat;
     }
   }
+
+  &--secondary-color {
+    $color: $medium-gray;
+  }
 }
