@@ -69,7 +69,7 @@ $global-font-size: 100%;
 $global-width: rem-calc(1480);
 $global-lineheight: 1.5;
 $foundation-palette: (
-  primary: #1779ba,
+  primary: #d8d8d8,
   secondary: #e84e0f,
   success: #00963f,
   warning: #ffae00,
@@ -91,7 +91,7 @@ $global-padding: 1.3rem;
 $global-position: 1rem;
 $global-weight-normal: normal;
 $global-weight-bold: bold;
-$global-radius: 0;
+$global-radius: 0.25rem;
 $global-menu-padding: 0.7rem 1rem;
 $global-menu-nested-margin: 1rem;
 $global-text-direction: ltr;
@@ -455,8 +455,8 @@ $form-button-radius: $global-radius;
 // ---------
 
 $label-background: $primary-color;
-$label-color: $white;
-$label-color-alt: $black;
+$label-color: $medium-gray;
+$label-color-alt: $medium-gray;
 $label-palette: $foundation-palette;
 $label-font-size: 0.8rem;
 $label-padding: 0.33333rem 0.5rem;

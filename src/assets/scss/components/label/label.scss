@@ -1,0 +1,23 @@
+.label {
+  display: inline-block;
+  font-weight: 500;
+
+  &--update {
+    margin-left: 0.5rem;
+    padding: 0.5rem;
+    font-size: 12px;
+    vertical-align: super;
+
+    &::before {
+      content: "";
+      position: relative;
+      top: 1px;
+      margin-right: 0.25rem;
+      width: 18px;
+      height: 12px;
+      display: inline-block;
+      background: url("update");
+    }
+  }
+
+}
