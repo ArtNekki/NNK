@@ -1,9 +1,17 @@
 .orbit {
+  $image-border-radius: 0.4rem;
+
   margin-bottom: 1.2rem;
+
+  &-figure {
+    border: 1px solid $light-gray;
+    border-radius: $image-border-radius;
+  }
 
   &-image {
     height: 300px;
     object-fit: cover;
+    border-radius: $image-border-radius;
   }
 
   &-bullets {
