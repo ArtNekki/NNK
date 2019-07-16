@@ -1,40 +1,74 @@
-.dropdown {
+.dropdown-wrapper {
 
-  &--contracts {
+  button.dropdown {
+    margin-bottom: 0;
+    padding-top: 0.6em;
+    padding-bottom: 0.4em;
+    padding-right: 0.3em;
+    padding-left: 0.75em;
+    font-size: 13px;
+    color: $medium-gray;
+    border-bottom: 1px solid $light-gray;
+    background: none;
+    transition: none;
 
-    button.dropdown {
-      margin-bottom: 0;
-      padding-top: 0.6em;
-      padding-bottom: 0.4em;
-      padding-right: 0.3em;
-      padding-left: 0.5em;
-      font-size: 13px;
-      color: $medium-gray;
-      border-bottom: 1px solid $light-gray;
-      background: none;
-      transition: none;
+    @include breakpoint(medium) {
+      margin-left: 1.8em;
+      padding-bottom: 0.6em;
+    }
 
-      @include breakpoint(medium) {
-        margin-right: 0.7em;
-        margin-left: 1.8em;
-        padding-bottom: 0.6em;
-      }
+    &::after {
+      width: 12px;
+      height: 8px;
+      top: 0.3em;
+      background: url("arrow-down");
+      background-repeat: no-repeat;
+      border: none;
+    }
 
-      &::after {
-        width: 12px;
-        height: 8px;
-        top: 0.3em;
-        background: url("arrow-down");
-        background-repeat: no-repeat;
-        border: none;
-      }
+    @include hover {
+      opacity: 0.7;
     }
   }
 
-  &-pane {
+  &--opened button.dropdown {
 
-    .dropdown--contracts &.is-open {
-      transform: translateY(-1px);
+    &::after {
+      background: url("arrow-up");
+    }
+  }
+
+  .dropdown-pane {
+    padding: 0;
+  }
+
+  &--opened .dropdown-pane {
+    transform: translateY(-1px);
+  }
+
+  .dropdown-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      padding: 0.25rem 0.75rem;
+      cursor: pointer;
+
+      @include hover() {
+        background-color: $orange;
+        color: $white;
+      }
+
+      @include focus() {
+        background-color: $orange;
+        color: $white;
+      }
+
+      &.is-active {
+        background-color: $orange;
+        color: $white;
+      }
     }
   }
 }
