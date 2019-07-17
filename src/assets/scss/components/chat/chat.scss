@@ -8,10 +8,9 @@
   }
 
   &-scroller {
-    height: 300px;
     overflow-y: auto;
 
-    @include breakpoint(medium) {
+    @include breakpoint(large) {
       margin: 0;
       padding: 0;
       padding-right: $scrollbar-width;

@@ -8,7 +8,7 @@
   }
 
   &__inner {
-    @include breakpoint(medium) {
+    @include breakpoint(large) {
       .page:not(.ie) & {
         display: flex;
         flex-direction: column;
