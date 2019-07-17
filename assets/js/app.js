@@ -23129,6 +23129,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_page_header_index__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/page-header/index */ "./src/assets/js/modules/page-header/index.js");
 /* harmony import */ var _modules_main_nav_index__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/main-nav/index */ "./src/assets/js/modules/main-nav/index.js");
 /* harmony import */ var _modules_chat_index__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modules/chat/index */ "./src/assets/js/modules/chat/index.js");
+/* harmony import */ var _modules_dropdown_index__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./modules/dropdown/index */ "./src/assets/js/modules/dropdown/index.js");
+
 
 
 
@@ -23178,6 +23180,58 @@ __webpack_require__.r(__webpack_exports__);
 //     impact: 'scroller'
 //   });
 // });
+
+/***/ }),
+
+/***/ "./src/assets/js/modules/dropdown/index.js":
+/*!*************************************************!*\
+  !*** ./src/assets/js/modules/dropdown/index.js ***!
+  \*************************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
+
+jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
+  var allDropdowns = jquery__WEBPACK_IMPORTED_MODULE_0___default()('[data-dropdown]');
+  var html = jquery__WEBPACK_IMPORTED_MODULE_0___default()('html');
+  allDropdowns.on('show.zf.dropdown', function () {
+    var wrapper = jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).parents('.dropdown-wrapper');
+    wrapper.addClass('dropdown-wrapper--opened');
+    html.addClass('dropdown--opened');
+  });
+  allDropdowns.on('hide.zf.dropdown', function () {
+    var wrapper = jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).parents('.dropdown-wrapper');
+    wrapper.removeClass('dropdown-wrapper--opened');
+  });
+  var activeItem = null;
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).on('click', '.dropdown-pane [data-target]', function () {
+    var wrapper = jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).parents('.dropdown-wrapper');
+    var dropdown = wrapper.find('[data-dropdown]');
+    var dropdownToggle = wrapper.find('[data-toggle]');
+
+    if (activeItem) {
+      activeItem.removeClass('is-active');
+      activeItem = null;
+    }
+
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).addClass('is-active');
+    activeItem = jquery__WEBPACK_IMPORTED_MODULE_0___default()(this);
+    dropdownToggle.html(jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).html());
+    dropdown.foundation('close');
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).on('click', function (e) {
+    var dropdown = e.target.closest('.dropdown-wrapper');
+
+    if (html.hasClass('dropdown--opened') && !dropdown) {
+      html.removeClass('dropdown--opened');
+      allDropdowns.foundation('close');
+    }
+  });
+});
 
 /***/ }),
 
