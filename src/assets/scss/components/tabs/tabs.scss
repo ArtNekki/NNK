@@ -3,24 +3,10 @@
   &--main-nav {
     position: relative;
     padding-top: 18px;
-    display: none;
+    flex-grow: 1;
+    display: block;
     background-color: transparent;
     border: none;
-
-    @include breakpoint(medium) {
-      display: block;
-    }
-
-    &::before {
-      content: "";
-      position: absolute;
-      z-index: -1;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      height: 4px;
-      background-color: $light-gray;
-    }
 
     .icon {
       @include main-nav-icon();
