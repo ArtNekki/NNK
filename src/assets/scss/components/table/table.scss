@@ -1,16 +1,5 @@
 .table {
 
-  thead {
-
-    tr {
-      background: transparent;
-    }
-
-    td {
-      font-weight: 400;
-    }
-  }
-
   &--invoice {
     width: 100%;
 
@@ -40,6 +29,51 @@
   &--cells-vertical-middle {
     td {
       vertical-align: middle !important;
+    }
+  }
+
+  &--print {
+    width: auto;
+
+    caption {
+      padding-left: 0;
+      padding-right: 0;
+      font-size: 11px;
+      font-weight: 400;
+      text-align: left;
+    }
+
+    thead {
+      background-color: #dfdfdf;
+    }
+
+    thead td,
+    thead th,
+    tbody td,
+    tfoot td {
+      font-size: 11px;
+      font-weight: 400;
+      color: $black;
+    }
+
+    thead td,
+    thead th,
+    tbody td {
+      padding: 0.3rem;
+      border: 1px solid darken($light-gray, 10%);
+    }
+
+    thead th {
+      text-align: center;
+    }
+
+    tfoot {
+      border: none;
+      background-color: transparent;
+    }
+
+    tfoot td {
+      padding: 0;
     }
   }
 
@@ -112,6 +146,16 @@
     td:last-child {
       padding-right: 3.7rem;
       padding-left: 0.5rem;
+    }
+  }
+
+  thead {
+    tr {
+      background: transparent;
+    }
+
+    td {
+      font-weight: 400;
     }
   }
 

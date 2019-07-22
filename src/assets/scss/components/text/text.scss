@@ -16,8 +16,12 @@
     }
   }
 
+  &--size-sm {
+    font-size: 11px;
+  }
+
   &--size-md {
-    font-size: 15px;
+    font-size: 16px; //15
   }
 
   &--align-sub {

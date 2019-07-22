@@ -8,6 +8,12 @@
     margin-bottom: 1.7rem;
   }
 
+  &--shadow {
+    margin-right: 1rem;
+    margin-left: 1rem;
+    box-shadow: 0 8px 20px 0 rgba($black, 0.15);
+  }
+
   &-devider {
     padding-top: 0.5rem;
     padding-left: $card-padding;

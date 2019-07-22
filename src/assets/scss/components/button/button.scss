@@ -49,8 +49,16 @@
   }
 
   &--icon {
+
     &::before {
+      content: "";
+      display: inline-block;
       vertical-align: middle;
+      background-repeat: no-repeat;
+
+      @include hover() {
+        opacity: 0.7;
+      }
     }
 
     span {
@@ -61,16 +69,34 @@
   &--attach-file {
 
     &::before {
-      content: "";
       width: 18px;
       height: 23px;
-      display: inline-block;
       background-image: url("attach-file");
-      background-repeat: no-repeat;
+    }
+  }
 
-      @include hover() {
-        opacity: 0.7;
-      }
+  &--download,
+  &--print {
+    margin-bottom: 0;
+
+    &::before {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  &--download {
+
+    &::before {
+      background-image: url("download");
+    }
+  }
+
+  &--print {
+    margin-left: 1.5rem;
+
+    &::before {
+      background-image: url("print");
     }
   }
 
