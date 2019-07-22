@@ -1,0 +1,13 @@
+.input-group-wrapper {
+
+  .input-group {
+    margin-bottom: 0;
+  }
+
+  &--sum {
+
+    & > *:first-child {
+      margin-right: 0.8rem;
+    }
+  }
+}

@@ -1,0 +1,8 @@
+.select {
+  background-image: url("arrow-down");
+  background-size: 12px 8px;
+
+  &--no-margin-bottom {
+    margin-bottom: 0;
+  }
+}

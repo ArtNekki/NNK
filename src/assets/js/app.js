@@ -5,6 +5,7 @@ import './modules/page-header/index';
 import './modules/main-nav/index';
 import './modules/chat/index';
 import './modules/dropdown/index';
+import './modules/select/index';
 
 // Foundation JS relies on a global varaible. In ES6, all imports are hoisted
 // to the top of the file so if we used`import` to import Foundation,

@@ -11,9 +11,35 @@
     }
   }
 
+  &--invoice {
+    width: 100%;
+
+    td {
+      display: block;
+    }
+
+    @include breakpoint(small) {
+      width: 100%;
+    }
+
+    @include breakpoint(medium) {
+      width: 60%;
+
+      td {
+        display: table-cell;
+      }
+    }
+  }
+
   &--left-full-width {
     td:first-child {
       width: 100%;
+    }
+  }
+
+  &--cells-vertical-middle {
+    td {
+      vertical-align: middle !important;
     }
   }
 
@@ -32,6 +58,14 @@
 
     td {
       padding-bottom: 0;
+    }
+  }
+
+  &--no-cells-padding-horizontal {
+
+    td {
+      padding-left: 0;
+      padding-right: 0;
     }
   }
 

@@ -24,6 +24,14 @@
     vertical-align: sub;
   }
 
+  &--align-middle {
+    vertical-align: -moz-middle-with-baseline;
+  }
+
+  &--bolder {
+    font-weight: 500;
+  }
+
   &--no-wrap {
     white-space: nowrap;
   }
