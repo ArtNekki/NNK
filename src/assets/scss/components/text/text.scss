@@ -99,6 +99,8 @@
   }
 
   &-card {
+    @extend .text;
+    @extend .text--icon;
     padding-left: 2.5rem;
 
     &--arested {
