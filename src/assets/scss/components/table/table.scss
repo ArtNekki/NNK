@@ -28,6 +28,13 @@
     }
   }
 
+  &--no-cells-padding-bottom {
+
+    td {
+      padding-bottom: 0;
+    }
+  }
+
   &--devider {
     margin-top: 1rem;
     padding-top: 1rem;

@@ -1,0 +1,35 @@
+.checkbox {
+
+  $checkbox-width: 18px;
+  $checkbox-height: 19px;
+
+  input {
+    display: none;
+  }
+
+  position: relative;
+  padding-left: 2.5rem;
+
+  &-indicator {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: $checkbox-width;
+    height: $checkbox-height;
+    background: url("checkbox-unchecked");
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: none;
+      width: $checkbox-width;
+      height: $checkbox-height;
+      background: url("checkbox-checked");
+    }
+  }
+
+  & > input:checked + &-indicator::after {
+    display: block;
+  }
+}

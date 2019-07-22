@@ -3,25 +3,6 @@
   font-size: 13px;
   color: $black;
 
-  &--size-md {
-    font-size: 15px;
-
-  }
-
-  &--sub {
-    vertical-align: sub;
-  }
-
-  &--currency {
-
-    &::after {
-      content: "₽";
-      margin-left: 0.6rem;
-      font-family: $body-font-family;
-      color: #9b9b9b;
-    }
-  }
-
   &--icon {
     position: relative;
     display: inline-block;
@@ -35,7 +16,35 @@
     }
   }
 
-  &--oil {
+  &--size-md {
+    font-size: 15px;
+  }
+
+  &--align-sub {
+    vertical-align: sub;
+  }
+
+  &--no-wrap {
+    white-space: nowrap;
+  }
+
+  &--light {
+    color: $medium-gray;
+  }
+
+  &--currency {
+
+    &::after {
+      content: "₽";
+      margin-left: 0.6rem;
+      font-family: $body-font-family;
+      color: #9b9b9b;
+    }
+  }
+
+  &-oil {
+    @extend .text;
+    @extend .text--icon;
     padding-left: 2.8rem;
 
     &::before {
@@ -45,14 +54,18 @@
       display: inline-block;
       background-repeat: no-repeat;
     }
-  }
 
-  &--oil.text--ge::before {
-    background: url("oil-ge");
-  }
+    &--ge::before {
+      background: url("oil-ge");
+    }
 
-  &--oil.text--regular::before {
-    background: url("oil-regular");
+    &--regular::before {
+      background: url("oil-regular");
+    }
+
+    &--checkbox {
+      padding-left: 2rem;
+    }
   }
 
   &-status {
