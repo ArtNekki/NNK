@@ -19,13 +19,17 @@
         <div class="card-section">
           <table class="table table--no-border unstriped">
             <tr>
-              <td>Остаток на счете</td>
+              <td>
+                <span class="text text--light">Остаток на счете</span>
+              </td>
               <td>
                 <span class="text text--currency text--size-md">1 253 456</span>
               </td>
             </tr>
             <tr>
-              <td>Состояние счета</td>
+              <td>
+                <span class="text text--light">Состояние счета</span>
+                </td>
               <td>
                 <span class="text text--icon text-status text-status--active">активен</span>
               </td>
@@ -43,156 +47,18 @@
       </div>
     </div>
     <div class="cell medium-6 stretch-free-height">
-      <div class="card card--table">
-        <div class="card-devider">
-          Установленные лимиты
-        </div>
-        <div class="card-section">
-          <table class="table table--no-border unstriped">
-            <tr>
-              <td>
-                Уведомление
-              </td>
-              <td>
-                <span class="text text--size-md text--currency">30 000</span>
-              </td>
-            </tr>
-            <tr>
-              <td>Блокировка</td>
-              <td>
-                <span class="text text--size-md text--currency">1 000</span>
-              </td>
-            </tr>
-          </table>
-        </div>
-      </div>
+      <!-- partials/cards/limits -->
+      {{> limits }}
     </div>
   </div>
   <div class="grid-x grid-margin-x">
     <div class="cell medium-6">
-      <div class="card card--table">
-        <div class="card-devider">
-          Карты
-        </div>
-        <div class="card-section">
-          <div class="card-text">Выберите карту для получения дополнительной информации и управления.</div>
-          <hr class="card-separator" />
-          <table class="table table--no-border unstriped">
-            <tr>
-              <td>
-                <span class="text text-card text-card--active">50190801875293810032</span>
-              </td>
-              <td>
-                <span class="text">500 л.</span>
-              </td>
-              <td>
-                <span class="text">действует</span>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <span class="text text-card text-card--active">50190801875293810032</span>
-              </td>
-              <td>
-                <span class="text">500 л.</span>
-              </td>
-              <td>
-                <span class="text">действует</span>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <span class="text text-card text-card--active">50190801875293810032</span>
-              </td>
-              <td>
-                <span class="text">500 л.</span>
-              </td>
-              <td>
-                <span class="text">действует</span>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <span class="text text-card text-card--blocked">50190801875293810032</span>
-              </td>
-              <td>
-                <span class="text">500 л.</span>
-              </td>
-              <td>
-                <span class="text">действует</span>
-              </td>
-            </tr>
-            <tr class="utils-text-disabled">
-              <td>
-                <span class="text text-card text-card--arested text--line-through">50190801875293810032</span>
-              </td>
-              <td>
-                <span class="text">500 л.</span>
-              </td>
-              <td>
-                <span class="text">действует</span>
-              </td>
-            </tr>
-            <tr class="utils-text-disabled">
-              <td>
-                <span class="text text-card text-card--arested text--line-through">50190801875293810032</span>
-              </td>
-              <td>
-                <span class="text">500 л.</span>
-              </td>
-              <td>
-                <span class="text">действует</span>
-              </td>
-            </tr>
-          </table>
-        </div>
-      </div>
+      <!-- partials/cards/limits -->
+      {{> cards }}
     </div>
     <div class="cell medium-6">
-      <div class="card card--table">
-        <div class="card-devider">
-          Договоры
-        </div>
-        <div class="card-section">
-          <table class="table table--no-border unstriped">
-            <tr>
-              <td>
-                <span class="text">Номер договора</span>
-              </td>
-              <td>
-                <span class="text text--size-md">НК21/1 - 592</span>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <span class="text">Дата заключения</span>
-              </td>
-              <td>
-                <span class="text text--size-md">12.02.2013</span>
-              </td>
-            </tr>
-          </table>
-          <hr class="card-separator" />
-          <table class="table table--no-border unstriped">
-            <tr>
-              <td>
-                <span class="text">Номер договора</span>
-              </td>
-              <td>
-                <span class="text text--size-md">НК21/1 - 782</span>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <span class="text">Дата заключения</span>
-              </td>
-              <td>
-                <span class="text text--size-md">26.04.2015</span>
-              </td>
-            </tr>
-          </table>
-        </div>
-      </div>
+      <!-- partials/cards/contracts -->
+      {{> contracts }}
     </div>
   </div>
 </div>
