@@ -39,6 +39,14 @@
   //   }
   // }
 
+  &-field {
+
+    .input-group--search & {
+      font-size: 15px;
+      color: map-get($foundation-palette, "primary");
+    }
+  }
+
   &-label {
     background: none;
     border: none;
@@ -57,7 +65,7 @@
       height: 100%;
     }
 
-    &--search {
+    .input-group--search & {
       width: 20px;
       background-image: url("search" param(--color $light-gray));
       background-repeat: no-repeat;

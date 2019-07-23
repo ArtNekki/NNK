@@ -1,0 +1,48 @@
+.pagination {
+  margin-top: 2.2rem;
+  margin-bottom: 1.3rem;
+
+  li:not(:last-child) {
+    margin-right: 0.5rem;
+  }
+
+  a,
+  li.current,
+  .pagination-previous {
+    padding: 0.4rem 1.2rem;
+    color: $medium-gray;
+    font-weight: 500;
+    border: 1px solid $light-gray;
+  }
+
+  li.current {
+    background-color: lighten($light-gray, 5%);
+    color: map-get($foundation-palette, "primary");
+  }
+
+  .pagination-previous {
+
+    &::before {
+      content: "";
+      position: relative;
+      top: 2px;
+      margin-right: 0;
+      width: 8px;
+      height: 12px;
+      background: url("arrow-left");
+    }
+  }
+
+  .pagination-next {
+
+    a::after {
+      content: "";
+      position: relative;
+      top: 2px;
+      margin-left: 0;
+      width: 8px;
+      height: 12px;
+      background: url("arrow-right");
+    }
+  }
+}
