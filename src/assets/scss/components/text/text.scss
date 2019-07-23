@@ -21,7 +21,7 @@
   }
 
   &--size-md {
-    font-size: 16px; //15
+    font-size: 15px; //15
   }
 
   &--align-sub {
@@ -42,6 +42,11 @@
 
   &--light {
     color: $medium-gray;
+  }
+
+  &--line-through {
+    text-decoration: line-through;
+    color: #9b9b9b;
   }
 
   &--currency {
@@ -81,6 +86,7 @@
   }
 
   &-status {
+    @extend .text--icon;
     font-size: 15px;
     padding-left: 1.5rem;
 
@@ -96,17 +102,24 @@
     &--active::before {
       background-color: map-get($foundation-palette, "success");
     }
+
+    &--notice::before {
+      background-color: map-get($foundation-palette, "warning");
+    }
+
+    &--blocked::before {
+      background-color: map-get($foundation-palette, "alert");
+    }
+
+    &--closed::before {
+      background-color: map-get($foundation-palette, "primary");
+    }
   }
 
   &-card {
     @extend .text;
     @extend .text--icon;
     padding-left: 2.5rem;
-
-    &--arested {
-      text-decoration: line-through;
-      color: #9b9b9b;
-    }
 
     &::before {
       width: 24px;

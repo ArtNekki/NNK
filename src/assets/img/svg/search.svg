@@ -5,7 +5,7 @@
     <desc>Created with Sketch.</desc>
     <g id="icv_look" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <rect id="Rectangle" x="0" y="0" width="24" height="24"></rect>
-        <g id="Lupa" transform="translate(2.000000, 2.000000)" fill="#E94D10" fill-rule="nonzero">
+        <g id="Lupa" transform="translate(2.000000, 2.000000)" style='fill:var(--color, #e84e0f)' fill-rule="nonzero">
             <path d="M19.6,17.4 C20.1,18 20.1,19 19.5,19.6 C18.9,20.2 18,20.2 17.4,19.6 L11.6,13.8 C10.4,14.5 9,15 7.5,15 C3.4,15 0,11.6 0,7.5 C0,3.4 3.4,0 7.5,0 C11.6,0 15,3.4 15,7.5 C15,9 14.6,10.4 13.8,11.6 L19.6,17.4 Z M2,7.5 C2,10.5 4.5,13 7.5,13 C10.5,13 13,10.5 13,7.5 C13,4.5 10.5,2 7.5,2 C4.5,2 2,4.5 2,7.5 Z" id="Shape"></path>
         </g>
     </g>

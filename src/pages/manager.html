@@ -1,55 +1,46 @@
 <div class="stretch-free-height grid-container">
   <div class="grid-x grid-margin-x">
-    <main class="cell medium-12 large-8 stretch-free-height">
+    <main class="cell medium-12 large-12 stretch-free-height">
       <div class="toolbar">
         <a href="#" class="toolbar-go-back">{{{ icon name="nav-account-state" }}}</a>
         <ul class="tabs tabs--main-nav" data-tabs data-deep-link="true" data-update-history="true" id="main-tabs">
           <li class="tabs-title is-active">
-            <a data-tabs-target="account-state-tab" href="#account-state-tab" class="tabs-link" aria-selected="true">
+            <a data-tabs-target="clients-tab" href="#clients-tab" class="tabs-link" aria-selected="true">
               {{{ icon name="nav-account-state" }}}
-              <span class="tabs-text">Состояние счета</span>
+              <span class="tabs-text">Клиенты</span>
             </a>
           </li>
           <li class="tabs-title">
-            <a  data-tabs-target="statement-tab" href="#statement-tab" class="tabs-link">
+            <a  data-tabs-target="banners-tab" href="#banners-tab" class="tabs-link">
               {{{ icon name="nav-statements" }}}
-              <span class="tabs-text">Выписки</span>
-            </a>
-          </li>
-          <li class="tabs-title">
-            <a data-tabs-target="cost-tab" href="#cost-tab" class="tabs-link">
-              {{{ icon name="nav-cost" }}}
-              <span class="tabs-text">Стоимость</span>
+              <span class="tabs-text">Баннеры</span>
             </a>
           </li>
           <li class="tabs-title">
             <a data-tabs-target="messages-tab" href="#messages-tab" class="tabs-link">
-              <span class="tabs-badge" id="messageCount">1</span>
+              {{{ icon name="nav-cost" }}}
               <span class="tabs-text">Сообщения</span>
             </a>
           </li>
         </ul>
+        <div class="toolbar-right">
+          <span class="text">Актуальность данных</span>
+          <span class="label label--update">24.04.2019, 18:32</span>
+        </div>
       </div>
       <div class="tabs-content stretch-free-height" data-tabs-content="main-tabs">
-        <div class="tabs-panel is-active" id="account-state-tab">
-          {{> accountStateTab }}
-          <!-- {{> cardInfo }} -->
-          <!-- {{> invoice }} -->
+        <div class="tabs-panel is-active" id="clients-tab">
+          {{> clients }}
         </div>
-        <div class="tabs-panel" id="statement-tab">
-          <!-- {{> statementTab }} -->
-          <!-- {{> statementInfo }} -->
-          {{> distributionOfFounds }}
+        <div class="tabs-panel" id="banners-tab">
+        banners
         </div>
-        <div class="tabs-panel" id="cost-tab">
-          {{> costTab }}
-        </div>
-        <div class="tabs-panel tabs-panel--messages stretch-free-height" id="messages-tab">
-          {{> messagesTab }}
+        <div class="tabs-panel" id="messages-tab">
+          messages
         </div>
       </div>
     </main>
-    <aside class="aside cell large-4">
+    <!-- <aside class="aside cell large-4">
       <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
         <ul class="orbit-container">
           <li class="orbit-slide is-active">
@@ -94,6 +85,6 @@
           <a href="#" class="link link--arrow">Читать полностью</a>
         </article>
       </section>
-    </aside>
+    </aside> -->
   </div>
 </div>

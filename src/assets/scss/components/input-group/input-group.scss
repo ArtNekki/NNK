@@ -1,4 +1,5 @@
 .input-group {
+  position: relative;
 
   &--inline {
     display: inline-flex;
@@ -30,20 +31,37 @@
     }
   }
 
-  &--currency + &--size-sm {
-
-    input {
-      width: 55px;
-      height: 2rem;
-    }
-  }
+  // &--currency + &--size-sm {
+  //
+  //   input {
+  //     width: 55px;
+  //     height: 2rem;
+  //   }
+  // }
 
   &-label {
-    padding: 0;
-    padding-left: 0.5rem;
-    font-size: 15px;
-    color: #9b9b9b;
-    border: 0;
     background: none;
+    border: none;
+
+    .input-group--currency & {
+      padding: 0;
+      padding-left: 0.5rem;
+      font-size: 15px;
+      color: #9b9b9b;
+    }
+
+    &--in-field {
+      position: absolute;
+      top: 0;
+      right: 1rem;
+      height: 100%;
+    }
+
+    &--search {
+      width: 20px;
+      background-image: url("search" param(--color $light-gray));
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+    }
   }
 }

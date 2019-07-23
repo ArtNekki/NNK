@@ -1,5 +1,6 @@
 .toolbar {
   position: relative;
+  margin-top: 1.2rem;
   display: none;
 
   @include breakpoint(medium) {
@@ -18,7 +19,7 @@
   }
 
   &-go-back {
-    margin-right: 1rem;
+    padding-right: 1rem;
     display: flex;
     align-items: center;
     border-bottom: 4px solid transparent;
@@ -31,5 +32,10 @@
     @include hover {
       border-bottom-color: $orange;
     }
+  }
+
+  &-right {
+    display: flex;
+    align-items: center;
   }
 }

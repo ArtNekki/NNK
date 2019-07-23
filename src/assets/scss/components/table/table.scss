@@ -32,6 +32,47 @@
     }
   }
 
+  &--clients {
+    thead {
+      background: none;
+      border: none;
+    }
+
+    tbody {
+      border-top-color: $light-gray;
+      border-left: none;
+      border-right: none;
+    }
+
+    tr {
+      border-color: $light-gray !important;
+    }
+
+    td,
+    th {
+      font-weight: 400;
+    }
+
+    td:first-child {
+      width: 35%;
+    }
+
+    td {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+
+    td:last-child {
+      padding-right: 2rem;
+    }
+
+    td:nth-child(5),
+    td:nth-child(6),
+    td:nth-child(7) {
+      width: 1px;
+    }
+  }
+
   &--print {
     width: auto;
 
