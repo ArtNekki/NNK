@@ -39,8 +39,12 @@
     vertical-align: sub;
   }
 
+  &--align-super {
+    vertical-align: super;
+  }
+
   &--align-middle {
-    vertical-align: -moz-middle-with-baseline;
+    vertical-align: middle;
   }
 
   &--bolder {
@@ -97,6 +101,7 @@
   }
 
   &-status {
+    @extend .text;
     @extend .text--icon;
     font-size: 15px;
     padding-left: 1.5rem;
@@ -124,6 +129,35 @@
 
     &--closed::before {
       background-color: map-get($foundation-palette, "primary");
+    }
+  }
+
+  &-result {
+    @extend .text;
+    @extend .text--icon;
+    padding-left: 2rem;
+    font-size: 15px;
+
+    &::before {
+      width: 24px;
+      height: 24px;
+    }
+
+    &--success {
+      color: map-get($foundation-palette, "success");
+      text-transform: uppercase;
+
+      &::before {
+        background: url("ok");
+      }
+    }
+
+    &--error {
+      color: map-get($foundation-palette, "alert");
+
+      &::before {
+        background: url("ok");
+      }
     }
   }
 

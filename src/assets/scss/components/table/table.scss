@@ -32,6 +32,46 @@
     }
   }
 
+  &--logs {
+
+    thead {
+      background: none;
+      border: none;
+    }
+
+    tbody {
+      border-top-color: $light-gray;
+      border-left: none;
+      border-right: none;
+
+      td {
+        padding-top: 1.1rem;
+        padding-bottom: 1.1rem;
+      }
+    }
+
+    tr {
+      border-color: $light-gray !important;
+    }
+
+    td:first-child {
+      width: 50px;
+    }
+
+    td:nth-child(2) {
+      width: 10%;
+    }
+
+    td:nth-child(3) {
+      width: 9%;
+    }
+
+    td:last-child {
+      width: 65px;
+      text-align: right;
+    }
+  }
+
   &--clients {
     thead {
       background: none;
