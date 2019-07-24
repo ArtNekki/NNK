@@ -2,8 +2,30 @@
   @include media-object-container;
   margin-bottom: 1.3rem;
 
+  &--filter {
+    margin-bottom: 0;
+    padding: 0.8rem 1.25rem 0.75rem 0.5rem;
+    user-select: none;
+
+    @include hover {
+      background-color: lighten($light-gray, 10%);
+    }
+  }
+
   &-section {
+    position: relative;
     @include media-object-section($mediaobject-section-padding);
+
+    .chat-message--filter &:last-child {
+      width: 100%;
+    }
+  }
+
+  &-header {
+    .chat-message--filter & {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 
   &-thumbnail {
@@ -25,6 +47,12 @@
       height: inherit;
       border-radius: 50%;
     }
+  }
+
+  &-count {
+    position: absolute;
+    top: 1.85rem;
+    right: 0;
   }
 
   h4 {

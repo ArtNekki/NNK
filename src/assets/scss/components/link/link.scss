@@ -24,16 +24,32 @@
     }
   }
 
+  &--disabled {
+    color: map-get($foundation-palette, "primary");
+
+    @include hover {
+      color: map-get($foundation-palette, "primary");
+    }
+
+    @include active {
+      color: map-get($foundation-palette, "primary");
+    }
+
+    @include focus {
+      color: map-get($foundation-palette, "primary");
+    }
+  }
+
   &--attach-file {
     position: relative;
     display: inline-block;
-    padding-left: 2.5rem;
+    padding-left: 2rem;
 
     &::before {
       content: "";
       position: absolute;
       top: 50%;
-      left: 0;
+      left: -5px;
       transform: translateY(-50%);
       width: 18px;
       height: 23px;
@@ -42,8 +58,8 @@
       background-repeat: no-repeat;
     }
   }
+}
 
-  &--secondary-color {
-    $color: $medium-gray;
-  }
+.link--disabled.link--attach-file::before {
+  background-image: url("attach-file" param(--color map-get($foundation-palette, "primary")));
 }

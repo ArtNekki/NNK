@@ -108,13 +108,6 @@
     margin-left: 6px;
   }
 
-  &-badge {
-    @include badge;
-    font-size: 10px;
-    color: $white;
-    background-color: $orange;
-  }
-
   &-right {
     display: flex;
     align-items: center;
