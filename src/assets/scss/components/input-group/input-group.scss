@@ -12,6 +12,10 @@
 
   &-field {
 
+    @include placeholder {
+      color: map-get($foundation-palette, "primary");
+    }
+
     .input-group--currency & {
       width: 80px;
       font-size: 15px;
@@ -31,14 +35,6 @@
     }
   }
 
-  // &--currency + &--size-sm {
-  //
-  //   input {
-  //     width: 55px;
-  //     height: 2rem;
-  //   }
-  // }
-
   &-field {
 
     .input-group--search & {
@@ -55,7 +51,7 @@
       padding: 0;
       padding-left: 0.5rem;
       font-size: 15px;
-      color: #9b9b9b;
+      color: map-get($foundation-palette, "primary");
     }
 
     &--in-field {

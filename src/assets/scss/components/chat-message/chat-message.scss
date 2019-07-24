@@ -65,7 +65,7 @@
 
   time {
     font-size: 14px;
-    color: #9b9b9b;
+    color: map-get($foundation-palette, "primary");
   }
 
   p {
