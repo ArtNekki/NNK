@@ -6,20 +6,22 @@
 <body>
   <div class="page__inner">
     {{> page-header-manager}}
-    <div class="stretch-free-height grid-container">
-      <div class="grid-x grid-margin-x">
-        <main class="cell medium-12 stretch-free-height">
-          <div class="main-nav main-nav--desktop">
-            {{> main-nav-list-manager}}
-            <div class="main-nav-right">
-              <span class="text text--no-wrap">Актуальность данных</span>
-              <span class="label label--update">24.04.2019, 18:32</span>
+    <main class="page-main">
+      <div class="stretch-free-height grid-container">
+        <div class="grid-x grid-margin-x stretch-free-height">
+          <div class="cell medium-12 stretch-free-height">
+            <div class="main-nav main-nav--desktop">
+              {{> main-nav-list-manager}}
+              <div class="main-nav-right">
+                <span class="text text--no-wrap">Актуальность данных</span>
+                <span class="label label--update">24.04.2019, 18:32</span>
+              </div>
             </div>
+            {{> body}}
           </div>
-          {{> body}}
-        </main>
+        </div>
       </div>
-    </div>
+    </main>
     {{> page-footer}}
   </div>
 <script src="{{root}}assets/js/app.js"></script>

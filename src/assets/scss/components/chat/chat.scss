@@ -18,6 +18,10 @@
     margin-right: 1rem;
     margin-bottom: 2rem;
     overflow-y: auto;
+
+    @include breakpoint(large) {
+      height: 1px;
+    }
   }
 
   &-main {

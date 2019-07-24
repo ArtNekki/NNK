@@ -6,18 +6,20 @@
 <body>
   <div class="page__inner">
     {{> page-header}}
-    <div class="stretch-free-height grid-container">
-      <div class="grid-x grid-margin-x">
-        <main class="cell medium-12 large-8 stretch-free-height">
-          <div class="main-nav main-nav--desktop">
-            <a onclick="window.history.back()" class="main-nav-go-back">{{{ icon name="nav-account-state" }}}</a>
-            {{> main-nav-list-client}}
+    <main class="page-main">
+      <div class="stretch-free-height grid-container">
+        <div class="grid-x grid-margin-x">
+          <div class="cell medium-12 large-8 stretch-free-height">
+            <div class="main-nav main-nav--desktop">
+              <a onclick="window.history.back()" class="main-nav-go-back">{{{ icon name="nav-account-state" }}}</a>
+              {{> main-nav-list-client}}
+            </div>
+            {{> body}}
           </div>
-          {{> body}}
-        </main>
-        {{> sidebar}}
+          {{> sidebar}}
+        </div>
       </div>
-    </div>
+    </main>
     {{> page-footer}}
   </div>
 <script src="{{root}}assets/js/app.js"></script>
