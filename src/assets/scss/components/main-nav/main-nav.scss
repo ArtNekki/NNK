@@ -114,4 +114,9 @@
     color: $white;
     background-color: $orange;
   }
+
+  &-right {
+    display: flex;
+    align-items: center;
+  }
 }
