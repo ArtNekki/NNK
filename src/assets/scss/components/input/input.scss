@@ -1,4 +1,10 @@
 .input {
+  margin-bottom: 1rem;
+
+  &--link {
+    font-size: 15px;
+    color: $black;
+  }
 
   &--no-margin-bottom {
     margin-bottom: 0;

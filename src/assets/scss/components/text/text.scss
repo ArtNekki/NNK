@@ -23,6 +23,18 @@
     text-overflow: ellipsis;
   }
 
+  &--margin-top-sm {
+    margin-top: 0.5rem;
+  }
+
+  &--margin-top-md {
+    margin-top: 1rem;
+  }
+
+  &--margin-top-lg {
+    margin-top: 1.5rem;
+  }
+
   &--size-sm {
     font-size: 11px;
   }
@@ -45,6 +57,10 @@
 
   &--align-middle {
     vertical-align: middle;
+  }
+
+  &--align-center {
+    text-align: center;
   }
 
   &--bolder {

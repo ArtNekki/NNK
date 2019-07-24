@@ -14,6 +14,11 @@
     box-shadow: 0 8px 20px 0 rgba($black, 0.15);
   }
 
+  &--content-center {
+    align-items: center;
+    justify-content: center;
+  }
+
   &-devider {
     padding-top: 0.5rem;
     padding-left: $card-padding;
@@ -55,5 +60,10 @@
       margin-top: 0;
       margin-bottom: 1rem;
     }
+  }
+
+  &-footer {
+    display: flex;
+    justify-content: space-between;
   }
 }
