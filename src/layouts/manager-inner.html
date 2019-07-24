@@ -5,16 +5,16 @@
   {{> head}}
 <body>
   <div class="page__inner">
-    {{> page-header}}
+    {{> page-header-manager}}
     <div class="stretch-free-height grid-container">
       <div class="grid-x grid-margin-x">
-        <main class="cell medium-12 large-8 stretch-free-height">
+        <main class="cell medium-12 stretch-free-height">
           <div class="main-nav main-nav--desktop">
-            {{> main-nav-list-client}}
+            <a onclick="window.history.back()" class="main-nav-go-back">{{{ icon name="nav-account-state" }}}</a>
+            {{> main-nav-list-manager}}
           </div>
           {{> body}}
         </main>
-        {{> sidebar}}
       </div>
     </div>
     {{> page-footer}}

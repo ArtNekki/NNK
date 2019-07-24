@@ -32,32 +32,9 @@
             </ul>
           </div>
         </div>
-        <ul class="main-nav" id="main-nav">
-          <li class="main-nav-item">
-            <a href="#account-state-tab" class="main-nav-link" data-tabs-target="account-state-tab">
-              {{{ icon name="nav-account-state" }}}
-              <span class="main-nav-text">Состояние счета</span>
-            </a>
-          </li>
-          <li class="main-nav-item">
-            <a href="#statement-tab" class="main-nav-link" data-tabs-target="statement-tab">
-              {{{ icon name="nav-statements" }}}
-              <span class="main-nav-text">Выписки</span>
-            </a>
-          </li>
-          <li class="main-nav-item">
-            <a href="#cost-tab" class="main-nav-link" data-tabs-target="cost-tab">
-              {{{ icon name="nav-cost" }}}
-              <span class="main-nav-text">Стоимость</span>
-            </a>
-          </li>
-          <li class="main-nav-item">
-            <a href="#messages-tab" class="main-nav-link" data-tabs-target="messages-tab">
-              <span class="main-nav-badge" id="messageCount">1 </span>
-              <span class="main-nav-text">Сообщения</span>
-            </a>
-          </li>
-        </ul>
+        <div class="main-nav">
+          {{> main-nav-list-client}}
+        </div>
         <a href="#" class="user-panel-logout">Выйти</a>
         <button class="user-panel-close close-button" aria-label="Close user info" data-close-user-panel type="button">
            <span aria-hidden="true">&times;</span>

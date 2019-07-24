@@ -1,0 +1,38 @@
+.main-content-header {
+  margin-bottom: 15px;
+  padding-top: 1.4rem;
+  padding-bottom: 1.4rem;
+  border-bottom: 1px solid $light-gray;
+
+  @include breakpoint(medium) {
+    margin-bottom: 20px;
+  }
+
+  &--no-border {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+
+  &-left {
+    @include breakpoint(medium) {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &-right {
+    // margin-top: 1rem;
+
+    @include breakpoint(medium) {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+
+    &--space-between {
+      @include breakpoint(medium) {
+        justify-content: space-between;
+      }
+    }
+  }
+}

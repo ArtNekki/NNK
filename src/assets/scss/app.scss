@@ -69,7 +69,6 @@
 
 //glabal custom
 @import 'global/common.scss';
-@import 'global/main-nav.scss';
 
 //components
 @import 'components/page/page';
@@ -80,7 +79,7 @@
 @import 'components/aside/aside';
 @import 'components/toolbar/toolbar';
 @import 'components/main-nav/main-nav';
-@import 'components/tabs/tabs';
+@import 'components/main-content-header/main-content-header';
 @import 'components/user-panel/user-panel';
 @import 'components/media-object/media-object';
 @import 'components/dropdown/dropdown';
