@@ -265,6 +265,17 @@
     }
   }
 
+  &--statement {
+    @extend .table--left-full-width;
+    @extend .table--no-border;
+    @extend .table--cells-vertical-middle;
+
+    td:nth-child(2) {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+
   thead {
     tr {
       background: transparent;
