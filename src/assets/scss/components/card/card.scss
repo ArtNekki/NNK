@@ -36,8 +36,8 @@
 
     .card--table & {
       padding-top: 1.2rem;
-      padding-right: 0;
-      padding-left: 0;
+      padding-right: $card-padding / 4;
+      padding-left:  $card-padding / 4;
       padding-bottom: 0.7rem;
     }
   }

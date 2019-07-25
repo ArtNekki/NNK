@@ -26,6 +26,12 @@
     }
   }
 
+  &--left-half-width {
+    td:first-child {
+      width: 50%;
+    }
+  }
+
   &--cells-vertical-middle {
     td {
       vertical-align: middle !important;

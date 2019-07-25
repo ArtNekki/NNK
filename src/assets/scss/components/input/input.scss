@@ -1,9 +1,18 @@
 .input {
   margin-bottom: 1rem;
+  display: inline-block;
 
-  &--link {
+  &--text-size-md {
     font-size: 15px;
     color: $black;
+  }
+
+  &--text-align-right {
+    text-align: right;
+  }
+
+  &--width-100 {
+    width: 100px;
   }
 
   &--no-margin-bottom {

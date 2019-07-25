@@ -75,6 +75,14 @@
     color: $medium-gray;
   }
 
+  &--super-light {
+    color: map-get($foundation-palette, "primary");
+  }
+
+  &--dark {
+    color: $black;
+  }
+
   &--line-through {
     text-decoration: line-through;
     color: #9b9b9b;
