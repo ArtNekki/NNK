@@ -38,6 +38,35 @@
     }
   }
 
+  &--distribution {
+    margin-bottom: 1.5rem;
+
+    thead {
+      background: none;
+      border: none;
+    }
+
+    tbody {
+      border-top-color: $light-gray;
+      border-left: none;
+      border-right: none;
+    }
+
+    tr {
+      border-bottom: 1px solid $light-gray !important;
+    }
+
+    td:last-child {
+      width: 10%;
+      text-align: right;
+    }
+
+    td:nth-child(2) {
+      width: 20%;
+      text-align: right;
+    }
+  }
+
   &--logs {
 
     thead {
