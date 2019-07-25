@@ -115,6 +115,13 @@ function sass() {
 
 let webpackConfig = {
   mode: (PRODUCTION ? 'production' : 'development'),
+  plugins: [
+    new webpack2.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery',
+      'window.jQuery': 'jquery'
+    }),
+  ],
   module: {
     rules: [
       {

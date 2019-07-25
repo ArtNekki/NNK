@@ -10,8 +10,10 @@
   "author": "ZURB <foundation@zurb.com>",
   "license": "MIT",
   "dependencies": {
+    "air-datepicker": "^2.2.3",
     "baron": "^3.0.3",
     "choices.js": "^7.0.0",
+    "flatpickr": "^4.6.2",
     "foundation-datepicker": "^1.5.6",
     "foundation-sites": "^6.5.1",
     "gulp-gh-pages": "^0.5.4",

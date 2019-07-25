@@ -1,0 +1,53 @@
+.toolbar {
+  display: flex;
+  flex-direction: column;
+
+  @include breakpoint(medium) {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .text {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    white-space: nowrap;
+
+    @include breakpoint(medium) {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  .text:first-of-type {
+    @include breakpoint(medium) {
+      margin-right: 1rem;
+    }
+  }
+
+  .text:nth-of-type(2) {
+    @include breakpoint(medium) {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem;
+    }
+  }
+
+  .text:last-of-type {
+    @include breakpoint(medium) {
+      margin-right: 1rem;
+      margin-left: 1.5rem;
+    }
+  }
+
+  .input--datepicker {
+    @include breakpoint(medium) {
+      width: 130px;
+    }
+  }
+
+  .select {
+    @include breakpoint(medium) {
+      max-width: 275px;
+      flex-shrink: 2;
+    }
+  }
+}

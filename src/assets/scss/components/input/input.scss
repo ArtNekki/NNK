@@ -18,4 +18,13 @@
   &--no-margin-bottom {
     margin-bottom: 0;
   }
+
+  &--datepicker {
+    // width: 130px;
+    font-size: 15px;
+    color: $black;
+    background-image: url("date");
+    background-repeat: no-repeat;
+    background-position: calc(100% - 8px) 50%;
+  }
 }

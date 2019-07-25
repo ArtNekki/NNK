@@ -1,0 +1,22 @@
+.datepicker {
+
+  &--day-name {
+    color: $yellow;
+  }
+
+  &--cell.-current- {
+    color: $orange;
+  }
+
+  &--cell.-selected- {
+    background-color: $orange;
+  }
+
+  &--cell.-selected-.-focus- {
+    background-color: lighten($orange, 5%);
+  }
+
+  &--cell.-current-.-selected- {
+    background-color: $orange;
+  }
+}

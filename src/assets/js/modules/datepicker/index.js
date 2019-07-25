@@ -1,1 +1,7 @@
-// import datepicker from 'foundation-datepicker';
+import $ from 'jquery';
+import 'air-datepicker';
+
+$(document).ready(function() {
+  $('#firstDate').datepicker();
+  $('#lastDate').datepicker();
+});
