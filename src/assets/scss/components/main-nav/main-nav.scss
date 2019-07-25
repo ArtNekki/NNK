@@ -31,15 +31,29 @@
     background-color: $light-gray;
   }
 
+  .icon {
+    width: 24px;
+    height: 24px;
+    fill: #666666;
+  }
+
   &-go-back {
-    padding-right: 1rem;
+    padding-right: 2rem;
     display: flex;
     align-items: center;
     border-bottom: 4px solid transparent;
 
     .icon {
+      position: relative;
+      top: 2px;
+      left: 8px;
       width: 16px;
       height: 16px;
+      fill: $orange;
+
+      @include hover {
+        fill: lighten($orange, 10%);
+      }
     }
 
     @include hover {
@@ -92,14 +106,8 @@
     }
 
     .main-nav-item.is-active & {
-      // @include main-nav-link-active();
+      border-color: $orange;
     }
-  }
-
-  .icon {
-    width: 24px;
-    height: 24px;
-    fill: #666666;
   }
 
   &-text {
