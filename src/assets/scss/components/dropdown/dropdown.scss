@@ -1,5 +1,11 @@
 .dropdown-wrapper {
 
+  &--contracts {
+    @include breakpoint(medium) {
+      margin-left: 1.5rem;
+    }
+  }
+
   button.dropdown {
     margin-bottom: 0;
     padding-top: 0.6em;
@@ -13,7 +19,6 @@
     transition: none;
 
     @include breakpoint(medium) {
-      margin-left: 1.8em;
       padding-bottom: 0.6em;
     }
 

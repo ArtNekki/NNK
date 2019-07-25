@@ -34,8 +34,8 @@
 
     @include breakpoint(medium) {
       margin-top: unset;
-      margin-left: 14px;
-      padding-left: 20px;
+      margin-left: 1.9rem;
+      padding-left: 1.3rem;
     }
 
     &::after {

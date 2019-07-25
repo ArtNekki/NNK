@@ -7,6 +7,13 @@
     align-items: flex-start;
   }
 
+  &-section {
+
+    &:first-child {
+      padding-right: 0.75rem
+    }
+  }
+
   &--header-user {
     margin-bottom: 0;
 
