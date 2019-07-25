@@ -1,10 +1,17 @@
 import Sortable from 'sortablejs';
+import { ready } from '../../utils/utils.js';
 
-// new Sortable(document.getElementById('sortBanners'), {
-//   animation: 150,
-//   chosenClass: 'blue-background-class',
-//   // dragClass: 'blue-background-class',
-//   // ghostClass: 'blue-background-class'
-// });
-//
-// console.log('sort', Sortable);
+ready(function() {
+
+  const banners = document.getElementById('sortBanners');
+
+  if (banners) {
+    new Sortable(document.getElementById('sortBanners'), {
+      animation: 150,
+      chosenClass: 'blue-background-class',
+      // dragClass: 'blue-background-class',
+      // ghostClass: 'blue-background-class'
+    });
+  }
+
+});
