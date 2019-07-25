@@ -45,7 +45,7 @@
     }
 
     .input-group--left & {
-      padding-left: 3rem;
+      padding-left: 2.5rem;
     }
 
     .input-group--login & {
@@ -82,12 +82,23 @@
     }
 
     .input-group--search &,
-    .input-group--login &,
+    .input-group--user &,
     .input-group--password & {
       width: 20px;
-      background-image: url("search" param(--color $light-gray));
       background-repeat: no-repeat;
       background-position: 50% 50%;
+    }
+
+    .input-group--search & {
+      background-image: url("search" param(--color $light-gray));
+    }
+
+    .input-group--user & {
+      background-image: url("user");
+    }
+
+    .input-group--password & {
+      background-image: url("password");
     }
   }
 }
