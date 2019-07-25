@@ -1,0 +1,19 @@
+{{!-- This is the base layout for your project, and will be used on every page unless specified. --}}
+
+<!doctype html>
+<html class="no-js page" lang="en">
+  {{> head}}
+<body>
+  <div class="page__inner page__inner--login">
+    <form action="{{root}}client/account-state.html" class="login-form">
+      <div class="login-form-header">
+        {{> main-logo}}
+      </div>
+      <div class="login-form-main">
+          {{> body}}
+      </div>
+    </form>
+  </div>
+<script src="{{root}}assets/js/app.js"></script>
+</body>
+</html>

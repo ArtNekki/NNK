@@ -6,8 +6,21 @@
     width: auto;
   }
 
+  &--space-between {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &--checkbox {
+    margin-bottom: 3rem;
+  }
+
   &--no-margin {
     margin-bottom: 0;
+  }
+
+  &--login {
+    margin-bottom: 1.25rem;
   }
 
   &-field {
@@ -36,9 +49,21 @@
   }
 
   &-field {
+    font-family: $body-font-family;
 
     .input-group--search & {
       font-size: 15px;
+      color: map-get($foundation-palette, "primary");
+    }
+
+    .input-group--left & {
+      padding-left: 3rem;
+    }
+
+    .input-group--login & {
+      font-size: 16px;
+      border: none;
+      border-bottom: 1px solid darken($light-gray, 25%);
       color: map-get($foundation-palette, "primary");
     }
   }
@@ -54,14 +79,19 @@
       color: map-get($foundation-palette, "primary");
     }
 
-    &--in-field {
+    .input-group--label-in-field & {
       position: absolute;
       top: 0;
-      right: 1rem;
       height: 100%;
     }
 
-    .input-group--search & {
+    .input-group--right & {
+      right: 1rem;
+    }
+
+    .input-group--search &,
+    .input-group--login &,
+    .input-group--password & {
       width: 20px;
       background-image: url("search" param(--color $light-gray));
       background-repeat: no-repeat;

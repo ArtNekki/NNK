@@ -1,0 +1,22 @@
+---
+title: Логин
+layout: authorization
+---
+
+<div class="input-group input-group--login input-group--search input-group--label-in-field input-group--left">
+  <span class="input-group-label"></span>
+  <input type="text" name="clients-search" class="input-group-field" placeholder="Имя пользователя">
+</div>
+<div class="input-group input-group--login input-group--search input-group--label-in-field input-group--left">
+  <span class="input-group-label"></span>
+  <input type="text" name="clients-search" class="input-group-field" placeholder="Пароль">
+</div>
+<div class="input-group input-group--space-between input-group--checkbox">
+  <label class="checkbox">
+    <input type="checkbox" name="stay-in" />
+    <i class="checkbox-indicator"></i>
+    <span class="text">Оставаться в системе</span>
+  </label>
+  <a href="{{root}}recovery.html" class="link">Забыли пароль?</a>
+</div>
+<button type="submit" class="button secondary login-form-submit">Войти</button>

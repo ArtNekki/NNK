@@ -16,5 +16,9 @@
         min-height: 100%;
       }
     }
+
+    &--login {
+      background-color: lighten($light-gray, 5%);
+    }
   }
 }
