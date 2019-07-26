@@ -1,0 +1,457 @@
+
+<!doctype html>
+<html class="no-js page" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation for Sites</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/app.css">
+    <script>
+      document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+        function cth(c){document.documentElement.classList.add(c)}
+        'ontouchstart' in window?cth('touch'):cth('no-touch');
+        if(typeof InstallTrigger!=='undefined')cth('firefox');
+        if(/constructor/i.test(window.HTMLElement)||(function(p){return p.toString()==="[object SafariRemoteNotification]"})(!window['safari']||(typeof safari!=='undefined'&&safari.pushNotification)))cth('safari');
+        if(/*@cc_on!@*/false||!!document.documentMode)cth('ie');
+        if(!(/*@cc_on!@*/false||!!document.documentMode)&&!!window.StyleMedia)cth('edge');
+        if(!!window.chrome&&(!!window.chrome.webstore||!!window.chrome.runtime))cth('chrome');
+        if(~navigator.appVersion.indexOf("Win"))cth('windows');
+        if(~navigator.appVersion.indexOf("Mac"))cth('osx');
+        if(~navigator.appVersion.indexOf("Linux"))cth('linux');
+    </script>
+  </head>
+<body>
+  <div class="page__inner">
+    <header class="page-header">
+      <div class="grid-container">
+        <div class="page-header-inner">
+          <div class="page-header-left">
+            <a href="/" class="main-logo">
+              <i class="main-logo-icon"></i>
+              <span class="main-logo-text">АО «ННК-Приморнефтепродукт»</span>
+            </a>
+            <button class="page-header-burger" data-open-user-panel>
+              <span></span>
+            </button>
+          </div>
+          <div class="user-panel" data-closable>
+            <div class="media-object media-object--header-user">
+              <div class="media-object-section">
+                <div class="thumbnail">
+                  <img src="../../assets/img/avatars/ava-user-001.jpg">
+                </div>
+              </div>
+              <div class="media-object-section">
+                <a href="#" class="name">ООО "Золотой Дракон"</a>
+              </div>
+            </div>
+            <div class="dropdown-wrapper dropdown-wrapper--contracts">
+              <button class="button dropdown" type="button" data-toggle="user-dropdown">НК21/1 - 592</button>
+              <div class="dropdown-pane" id="user-dropdown" data-dropdown  data-position="bottom" data-alignment="left" data-auto-focus="true">
+                <ul class="dropdown-list">
+                  <li data-target>НК21/1 - 593</li>
+                  <li data-target>НК21/1 - 594</li>
+                  <li data-target>НК21/1 - 595</li>
+                  <li data-target>НК21/1 - 596</li>
+                </ul>
+              </div>
+            </div>
+            <div class="main-nav">
+              <ul class="main-nav-list">
+                <li class="main-nav-item is-active">
+                  <a href="../../client/account-state.html" class="main-nav-link">
+                    <svg class="icon">
+                               <use xlink:href="../../assets/img/symbol/sprite.svg#account-state">
+                            </svg>
+                    <span class="main-nav-text">Состояние счета</span>
+                  </a>
+                </li>
+                <li class="main-nav-item ">
+                  <a href="../../client/statements.html" class="main-nav-link">
+                    <svg class="icon">
+                               <use xlink:href="../../assets/img/symbol/sprite.svg#statements">
+                            </svg>
+                    <span class="main-nav-text">Выписки</span>
+                  </a>
+                </li>
+                <li class="main-nav-item ">
+                  <a href="../../client/price-list.html" class="main-nav-link">
+                    <svg class="icon">
+                               <use xlink:href="../../assets/img/symbol/sprite.svg#cost">
+                            </svg>
+                    <span class="main-nav-text">Стоимость</span>
+                  </a>
+                </li>
+                <li class="main-nav-item ">
+                  <a href="../../client/messages.html" class="main-nav-link">
+                    <span class="badge" id="messageCount">1</span>
+                    <span class="main-nav-text">Сообщения</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <a href="#" class="user-panel-logout">Выйти</a>
+            <button class="user-panel-close close-button" aria-label="Close user info" data-close-user-panel type="button">
+               <span aria-hidden="true">&times;</span>
+             </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="page-main">
+      <div class="stretch-free-height grid-container">
+        <div class="grid-x grid-margin-x stretch-free-height">
+          <div class="cell medium-12 large-8 stretch-free-height">
+            <div class="main-nav main-nav--desktop">
+              <a onclick="window.history.back()" class="main-nav-go-back"><svg class="icon">
+                 <use xlink:href="../../assets/img/symbol/sprite.svg#arrow-back">
+              </svg></a>
+              <ul class="main-nav-list">
+                <li class="main-nav-item is-active">
+                  <a href="../../client/account-state.html" class="main-nav-link">
+                    <svg class="icon">
+                               <use xlink:href="../../assets/img/symbol/sprite.svg#account-state">
+                            </svg>
+                    <span class="main-nav-text">Состояние счета</span>
+                  </a>
+                </li>
+                <li class="main-nav-item ">
+                  <a href="../../client/statements.html" class="main-nav-link">
+                    <svg class="icon">
+                               <use xlink:href="../../assets/img/symbol/sprite.svg#statements">
+                            </svg>
+                    <span class="main-nav-text">Выписки</span>
+                  </a>
+                </li>
+                <li class="main-nav-item ">
+                  <a href="../../client/price-list.html" class="main-nav-link">
+                    <svg class="icon">
+                               <use xlink:href="../../assets/img/symbol/sprite.svg#cost">
+                            </svg>
+                    <span class="main-nav-text">Стоимость</span>
+                  </a>
+                </li>
+                <li class="main-nav-item ">
+                  <a href="../../client/messages.html" class="main-nav-link">
+                    <span class="badge" id="messageCount">1</span>
+                    <span class="main-nav-text">Сообщения</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="main-content-header">
+              <div class="grid-x">
+                <div class="cell medium-6 main-content-header-left">
+                  <span class="text">Карта № 50190801875293810032</span>
+                </div>
+                <div class="cell medium-6 main-content-header-right">
+                  <span class="text">Актуальность данных</span>
+                  <span class="label label--update">24.04.2019, 18:32</span>
+                </div>
+              </div>
+            </div>
+            <form action="#">
+              <div class="grid-x grid-margin-x">
+                <div class="cell medium-6">
+                  <div class="card card--table">
+                    <div class="card-devider">
+                      Информация по карте
+                    </div>
+                    <div class="card-section">
+                      <table class="table table--no-border table--left-half-width table--cells-vertical-middle unstriped ">
+                        <tr>
+                          <td>
+                            <span class="text text--light">Состояние</span>
+                          </td>
+                          <td>
+                            <span class="text-card text-card--active text--size-md">действует</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <span class="text text--light">Договор</span>
+                          </td>
+                          <td>
+                            <span class="text text--size-md">НК21/1 - 592 от <br /> 12.02.2013</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <span class="text text--light">Тип лимита</span>
+                          </td>
+                          <td>
+                            <span class="text text--size-md">Суточный</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <span class="text text--align-sub text--light">Лимит</span>
+                          </td>
+                          <td>
+                            <input class="input input--no-margin-bottom input--width-100 input--text-size-md input--text-align-right" type="text" name="limit">
+                            <span class="text text--light text--align-middle text--no-wrap">л / сутки</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="3">
+                            <span class="text text--super-light">В Личном Кабинете возможно только уменьшение суточного лимита.</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="2">
+                            <a href="#" class="link link--arrow" >Арестовать карту</a>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="card card--table">
+                    <div class="card-devider">
+                      Информация по карта (вариант 2)
+                    </div>
+                    <div class="card-section">
+                      <table class="table table--no-border table--left-half-width table--cells-vertical-middle unstriped">
+                        <tr>
+                          <td>
+                            <span class="text text--light">Состояние</span>
+                          </td>
+                          <td>
+                            <span class="text-card text-card--active text--size-md">действует</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <span class="text text--light">Договор</span>
+                          </td>
+                          <td>
+                            <span class="text text--size-md">НК21/1 - 592 от <br /> 12.02.2013</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <span class="text text--light">Тип лимита</span>
+                          </td>
+                          <td>
+                            <span class="text text--size-md">Месячный</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <span class="text text--light text--align-sub">Лимит</span>
+                          </td>
+                          <td>
+                            <span class="text text--size-md">2000</span>
+                            <span class="text text--light">л / месяц</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="2">
+                            <a href="#" class="link link--arrow" >Арестовать карту</a>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="cell medium-6">
+                  <div class="card card--table">
+                    <div class="card-devider">
+                      Доступные виды топлива
+                    </div>
+                    <div class="card-section">
+                      <table class="table table--no-border table--no-cells-padding-bottom unstriped">
+                        <tr>
+                          <td>
+                            <label class="checkbox checkbox--icon">
+                              <input type="checkbox" name="oil-type" />
+                              <i class="checkbox-indicator"></i>
+                              <span class="text-oil text-oil--regular text-oil--checkbox">Бензин Супер - 98 Green Eco</span>
+                            </label>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <label class="checkbox checkbox--icon">
+                              <input type="checkbox" name="oil-type" />
+                              <i class="checkbox-indicator"></i>
+                              <span class="text-oil text-oil--ge text-oil--checkbox">Бензин Супер - 98 Green Eco</span>
+                            </label>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <label class="checkbox checkbox--icon">
+                              <input type="checkbox" name="oil-type" />
+                              <i class="checkbox-indicator"></i>
+                              <span class="text-oil text-oil--regular text-oil--checkbox">Бензин Супер - 98 Green Eco</span>
+                            </label>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <label class="checkbox checkbox--icon">
+                              <input type="checkbox" name="oil-type" />
+                              <i class="checkbox-indicator"></i>
+                              <span class="text-oil text-oil--ge text-oil--checkbox">Бензин Супер - 98 Green Eco</span>
+                            </label>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <label class="checkbox checkbox--icon">
+                              <input type="checkbox" name="oil-type" />
+                              <i class="checkbox-indicator"></i>
+                              <span class="text-oil text-oil--regular text-oil--checkbox">Бензин Супер - 98 Green Eco</span>
+                            </label>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <label class="checkbox checkbox--icon">
+                              <input type="checkbox" name="oil-type" />
+                              <i class="checkbox-indicator"></i>
+                              <span class="text-oil text-oil--ge text-oil--checkbox">Бензин Супер - 98 Green Eco</span>
+                            </label>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <label class="checkbox checkbox--icon">
+                              <input type="checkbox" name="oil-type" />
+                              <i class="checkbox-indicator"></i>
+                              <span class="text-oil text-oil--regular text-oil--checkbox">Бензин Супер - 98 Green Eco</span>
+                            </label>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <label class="checkbox checkbox--icon">
+                              <input type="checkbox" name="oil-type" />
+                              <i class="checkbox-indicator"></i>
+                              <span class="text-oil text-oil--ge text-oil--checkbox">Бензин Супер - 98 Green Eco</span>
+                            </label>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <label class="checkbox checkbox--icon">
+                              <input type="checkbox" name="oil-type" />
+                              <i class="checkbox-indicator"></i>
+                              <span class="text-oil text-oil--regular text-oil--checkbox">Бензин Супер - 98 Green Eco</span>
+                            </label>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <label class="checkbox checkbox--icon">
+                              <input type="checkbox" name="oil-type" />
+                              <i class="checkbox-indicator"></i>
+                              <span class="text-oil text-oil--ge text-oil--checkbox">Бензин Супер - 98 Green Eco</span>
+                            </label>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <label class="checkbox checkbox--icon">
+                              <input type="checkbox" name="oil-type" />
+                              <i class="checkbox-indicator"></i>
+                              <span class="text-oil text-oil--regular text-oil--checkbox">Бензин Супер - 98 Green Eco</span>
+                            </label>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <label class="checkbox checkbox--icon">
+                              <input type="checkbox" name="oil-type" />
+                              <i class="checkbox-indicator"></i>
+                              <span class="text-oil text-oil--ge text-oil--checkbox">Бензин Супер - 98 Green Eco</span>
+                            </label>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <button type="submit" class="button secondary button--wide button--margin-top-md">Отправить</button>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+            
+          </div>
+          <aside class="aside cell large-4">
+            <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+              <ul class="orbit-container">
+                <li class="orbit-slide is-active">
+                  <figure class="banner">
+                    <img class="banner-image" src="../../assets/img/content/image_01.jpg" alt="Image 1">
+                  </figure>
+                </li>
+                <li class="orbit-slide">
+                  <figure class="banner">
+                    <img class="banner-image" src="../../assets/img/content/image_02.jpg" alt="Image 2">
+                  </figure>
+                </li>
+                <li class="orbit-slide">
+                  <figure class="banner">
+                    <img class="banner-image" src="../../assets/img/content/image_03.jpg" alt="Image 3">
+                  </figure>
+                </li>
+              </ul>
+              <nav class="orbit-bullets">
+                <button class="is-active" data-slide="0">
+                </button>
+                <button data-slide="1">
+                </button>
+                <button data-slide="2">
+                </button>
+              </nav>
+            </div>
+            <section class="page-section">
+              <h2 class="page-section-title">Важная информация</h2>
+              <article class="news-post">
+                <h1 class="news-post-title">О порядке ценообразования</h1>
+                <p class="text">С 1 ноября 2018 года отменены все скидки на нефтепродукты. Отпуск нефтепродуктов на АЗС осуществляется по ценам, указанным на стеле.</p>
+                <a href="#" class="link link--arrow">Читать полностью</a>
+              </article>
+              <article class="news-post">
+                <h1 class="news-post-title">Из правил безопасности на АЗС</h1>
+                <p class="text">На основании требований нормативных документов на АЗС запрещается:</p>
+                <ul class="list list--danger">
+                  <li>Выдача нефтепродуктов в пластиковую и стеклянную тару.</li>
+                  <li>Налив в автотестерны и бочки, установленные непосредственно на автомобилях.</li>
+                </ul>
+                <a href="#" class="link link--arrow">Читать полностью</a>
+              </article>
+            </section>
+          </aside>
+        </div>
+      </div>
+    </main>
+    <footer class="page-footer">
+      <div class="grid-container">
+        <div class="grid-x grid-margin-x">
+          <div class="cell medium-8">
+            <small>© АО «ННК-Приморнефтепродукт», 2009 - 2019</small>
+            <small>Отдел безналичных расчетов:  +7 (423) 240-31-29, 240-31-80, cardsupport@primornp.ru</small>
+          </div>
+          <div class="page-footer-right cell medium-4">
+            <a href="#" class="page-footer-dev">
+              <svg class="icon">
+                     <use xlink:href="../../assets/img/symbol/sprite.svg#websee-logo">
+                  </svg>
+              <span>Разработка системы - WebSee</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+<script src="../../assets/js/app.js"></script>
+</body>
+</html>
