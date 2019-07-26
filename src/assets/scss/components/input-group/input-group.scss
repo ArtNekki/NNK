@@ -21,20 +21,10 @@
       color: map-get($foundation-palette, "primary");
     }
 
-    .input-group--currency & {
-      width: 80px;
-      font-size: 15px;
-      color: $black;
-      text-align: right;
-    }
-
-    .input-group--currency.input-group--secondary & {
-      width: 40px;
-    }
-
     .input-group--size-sm & {
       padding: 0.25rem;
       width: 60px;
+      min-width: 60px;
       height: 2rem;
       font-size: 13px;
     }
@@ -64,7 +54,7 @@
     background: none;
     border: none;
 
-    .input-group--currency & {
+    &--currency {
       padding: 0;
       padding-left: 0.5rem;
       font-size: 15px;

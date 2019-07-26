@@ -281,8 +281,10 @@
       background: transparent;
     }
 
-    td {
+    td,
+    th {
       font-weight: 400;
+      white-space: nowrap;
     }
   }
 
