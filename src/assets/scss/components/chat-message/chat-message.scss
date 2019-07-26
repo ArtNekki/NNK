@@ -5,6 +5,7 @@
   &--filter {
     margin-bottom: 0;
     padding: 0.8rem 1.25rem 0.75rem 0.5rem;
+    min-height: 70px;
     user-select: none;
 
     @include hover {
