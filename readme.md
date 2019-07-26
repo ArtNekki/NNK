@@ -1,6 +1,6 @@
 Формы авторизации:
 
-Логин: https://artnekki.github.io/zurb/
+<li> Логин: https://artnekki.github.io/zurb/ </li>
 Восстановление пароля: https://artnekki.github.io/zurb/recovery.html
 
 Страницы клиента:
