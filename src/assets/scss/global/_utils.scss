@@ -1,4 +1,4 @@
-.stretch-free-height {
+.u-grow-full-height {
   @include breakpoint(medium) {
     display: flex;
     flex-direction: column;
@@ -6,19 +6,15 @@
   }
 }
 
-.utils-margin-top-md {
-  display: none;
-  margin-top: 1rem;
+.u-full-height {
+  height: 100%;
 }
 
-.utils-text-disabled .text {
+
+.u-text-disabled .text {
   color: #9b9b9b;
 }
 
-.utils-vertical-align-middle {
-  vertical-align: middle;
-}
-
-.utils-text-align-center {
+.u-text-align-center {
   text-align: center;
 }
