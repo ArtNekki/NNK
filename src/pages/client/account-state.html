@@ -21,32 +21,34 @@ layout: default
         Счет
       </div>
       <div class="card-section">
-        <table class="table table--no-border unstriped">
-          <tr>
-            <td>
-              <span class="text text--light">Остаток на счете</span>
-            </td>
-            <td>
-              <span class="text text--currency text--size-md">1 253 456</span>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <span class="text text--light">Состояние счета</span>
+        <div class="table-scroll">
+          <table class="table table--no-border unstriped">
+            <tr>
+              <td>
+                <span class="text text--light">Остаток на счете</span>
               </td>
-            <td>
-              <span class="text text--icon text-status text-status--active">активен</span>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <a href="{{root}}client/account-state/card-info.html" class="link link--arrow" >Пополнить счет</a>
-            </td>
-            <td>
-              <a href="{{root}}client/account-state/distribution.html" class="link link--arrow" >Распределить средства</a>
-            </td>
-          </tr>
-        </table>
+              <td>
+                <span class="text text--currency text--size-md">1 253 456</span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text text--light">Состояние счета</span>
+                </td>
+              <td>
+                <span class="text text--icon text-status text-status--active">активен</span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="{{root}}client/account-state/card-info.html" class="link link--arrow" >Пополнить счет</a>
+              </td>
+              <td>
+                <a href="{{root}}client/account-state/distribution.html" class="link link--arrow" >Распределить средства</a>
+              </td>
+            </tr>
+          </table>
+        </div>
       </div>
     </div>
   </div>
