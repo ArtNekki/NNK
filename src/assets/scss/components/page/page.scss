@@ -23,4 +23,12 @@
       background-color: lighten($light-gray, 5%);
     }
   }
+
+  &-go-back-mobile {
+    margin-top: 1rem;
+
+    @include breakpoint(medium) {
+      display: none;
+    }
+  }
 }
