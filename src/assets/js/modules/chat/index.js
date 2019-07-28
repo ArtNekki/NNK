@@ -1,4 +1,4 @@
-import { ready } from '../../utils/utils';
+import $ from 'jquery';
 import baron from 'baron';
 
 // ready(function() {
@@ -12,3 +12,17 @@ import baron from 'baron';
 //     impact: 'scroller'
 //   });
 // });
+
+$(document).ready(function() {
+  $('#chat-filter').on('click', function(e) {
+      const message = e.target.closest('.chat-message--filter');
+
+      if (message) {
+        $('html').addClass('page--manager-selected');
+      }
+  });
+
+  $('#chat-open-filter').on('click', function() {
+    $('html').removeClass('page--manager-selected');
+  });
+});
