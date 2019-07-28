@@ -23,7 +23,7 @@
     </script>
   </head>
 <body>
-  <div class="page__inner">
+  <div id="page" class="page__inner">
     <header class="page-header">
       <div class="grid-container">
         <div class="page-header-inner">
@@ -101,9 +101,9 @@
       </div>
     </header>
     <main class="page-main">
-      <div class="stretch-free-height grid-container">
-        <div class="grid-x grid-margin-x stretch-free-height">
-          <div class="cell medium-12 stretch-free-height">
+      <div class="grid-container u-full-height">
+        <div class="grid-x grid-margin-x u-full-height">
+          <div class="cell medium-12 u-grow-full-height">
             <div class="main-nav main-nav--desktop">
               <ul class="main-nav-list">
                 <li class="main-nav-item is-active">
@@ -140,9 +140,10 @@
             </div>
             
             <div class="chat">
-              <div class="grid-x grid-margin-x stretch-free-height">
-                <div class="cell medium-4 stretch-free-height">
-                  <div class="chat-filter">
+              <div class="grid-x grid-margin-x u-grow-full-height">
+                <div class="cell large-4 u-grow-full-height">
+                  <a href="#page" id="chat-open-filter" class="chat-open-filter" data-smooth-scroll>Другой менеджер</a>
+                  <div id="chat-filter" class="chat-filter">
                     <div class="chat-filter-header">
                       <div class="input-group input-group--no-margin input-group--search input-group--label-in-field input-group--right">
                         <input type="text" name="clients-search" class="input-group-field" placeholder="Поиск менеджера">
@@ -198,7 +199,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="cell medium-8 stretch-free-height">
+                <div id="chat-messages" class="cell large-8 u-grow-full-height js-chat-messages">
                   <form action="#" class="chat-main">
                     <div class="chat-main-content" id="main-chat">
                       <div class="chat-scroller">

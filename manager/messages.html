@@ -23,7 +23,7 @@
     </script>
   </head>
 <body>
-  <div class="page__inner">
+  <div id="page" class="page__inner">
     <header class="page-header">
       <div class="grid-container">
         <div class="page-header-inner">
@@ -40,33 +40,52 @@
             <div class="media-object media-object--header-user">
               <div class="media-object-section">
                 <div class="thumbnail">
-                  <img src="../assets/img/avatars/ava-manager-001.jpg">
+                  <img src="../assets/img/avatars/ava-user-001.jpg">
                 </div>
               </div>
               <div class="media-object-section">
-                <a href="#" class="name">Анастасия</a>
+                <a href="#" class="name">ООО "Золотой Дракон"</a>
+              </div>
+            </div>
+            <div class="dropdown-wrapper dropdown-wrapper--contracts">
+              <button class="button dropdown" type="button" data-toggle="user-dropdown">НК21/1 - 592</button>
+              <div class="dropdown-pane" id="user-dropdown" data-dropdown  data-position="bottom" data-alignment="left" data-auto-focus="true">
+                <ul class="dropdown-list">
+                  <li data-target>НК21/1 - 593</li>
+                  <li data-target>НК21/1 - 594</li>
+                  <li data-target>НК21/1 - 595</li>
+                  <li data-target>НК21/1 - 596</li>
+                </ul>
               </div>
             </div>
             <div class="main-nav">
               <ul class="main-nav-list">
                 <li class="main-nav-item is-active">
-                  <a href="../manager/clients.html" class="main-nav-link">
+                  <a href="../client/account-state.html" class="main-nav-link">
                     <svg class="icon">
-                               <use xlink:href="../assets/img/symbol/sprite.svg#clients">
+                               <use xlink:href="../assets/img/symbol/sprite.svg#account-state">
                             </svg>
-                    <span class="main-nav-text">Клиенты</span>
+                    <span class="main-nav-text">Состояние счета</span>
                   </a>
                 </li>
                 <li class="main-nav-item ">
-                  <a href="../manager/banners.html" class="main-nav-link">
+                  <a href="../client/statements.html" class="main-nav-link">
                     <svg class="icon">
-                               <use xlink:href="../assets/img/symbol/sprite.svg#banners">
+                               <use xlink:href="../assets/img/symbol/sprite.svg#statements">
                             </svg>
-                    <span class="main-nav-text">Баннеры</span>
+                    <span class="main-nav-text">Выписки</span>
                   </a>
                 </li>
-                <li class="main-nav-item">
-                  <a href="../manager/messages.html" class="main-nav-link">
+                <li class="main-nav-item ">
+                  <a href="../client/price-list.html" class="main-nav-link">
+                    <svg class="icon">
+                               <use xlink:href="../assets/img/symbol/sprite.svg#cost">
+                            </svg>
+                    <span class="main-nav-text">Стоимость</span>
+                  </a>
+                </li>
+                <li class="main-nav-item ">
+                  <a href="../client/messages.html" class="main-nav-link">
                     <span class="badge" id="messageCount">1</span>
                     <span class="main-nav-text">Сообщения</span>
                   </a>
@@ -82,44 +101,49 @@
       </div>
     </header>
     <main class="page-main">
-      <div class="stretch-free-height grid-container">
-        <div class="grid-x grid-margin-x stretch-free-height">
-          <div class="cell medium-12 stretch-free-height">
+      <div class="grid-container u-full-height">
+        <div class="grid-x grid-margin-x u-full-height">
+          <div class="cell medium-12 u-grow-full-height">
             <div class="main-nav main-nav--desktop">
               <ul class="main-nav-list">
                 <li class="main-nav-item is-active">
-                  <a href="../manager/clients.html" class="main-nav-link">
+                  <a href="../client/account-state.html" class="main-nav-link">
                     <svg class="icon">
-                               <use xlink:href="../assets/img/symbol/sprite.svg#clients">
+                               <use xlink:href="../assets/img/symbol/sprite.svg#account-state">
                             </svg>
-                    <span class="main-nav-text">Клиенты</span>
+                    <span class="main-nav-text">Состояние счета</span>
                   </a>
                 </li>
                 <li class="main-nav-item ">
-                  <a href="../manager/banners.html" class="main-nav-link">
+                  <a href="../client/statements.html" class="main-nav-link">
                     <svg class="icon">
-                               <use xlink:href="../assets/img/symbol/sprite.svg#banners">
+                               <use xlink:href="../assets/img/symbol/sprite.svg#statements">
                             </svg>
-                    <span class="main-nav-text">Баннеры</span>
+                    <span class="main-nav-text">Выписки</span>
                   </a>
                 </li>
-                <li class="main-nav-item">
-                  <a href="../manager/messages.html" class="main-nav-link">
+                <li class="main-nav-item ">
+                  <a href="../client/price-list.html" class="main-nav-link">
+                    <svg class="icon">
+                               <use xlink:href="../assets/img/symbol/sprite.svg#cost">
+                            </svg>
+                    <span class="main-nav-text">Стоимость</span>
+                  </a>
+                </li>
+                <li class="main-nav-item ">
+                  <a href="../client/messages.html" class="main-nav-link">
                     <span class="badge" id="messageCount">1</span>
                     <span class="main-nav-text">Сообщения</span>
                   </a>
                 </li>
               </ul>
-              <div class="main-nav-right">
-                <span class="text text--no-wrap">Актуальность данных</span>
-                <span class="label label--update">24.04.2019, 18:32</span>
-              </div>
             </div>
             
             <div class="chat">
-              <div class="grid-x grid-margin-x stretch-free-height">
-                <div class="cell medium-4 stretch-free-height">
-                  <div class="chat-filter">
+              <div class="grid-x grid-margin-x u-full-height">
+                <div class="cell large-4 u-grow-full-height">
+                  <a href="#page" id="chat-open-filter" class="chat-open-filter" data-smooth-scroll>Другой клиент</a>
+                  <div id="chat-filter" class="chat-filter">
                     <div class="chat-filter-header">
                       <div class="input-group input-group--no-margin input-group--search input-group--label-in-field input-group--right">
                         <input type="text" name="clients-search" class="input-group-field" placeholder="Поиск клиента">
@@ -301,7 +325,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="cell medium-8 stretch-free-height">
+                <div id="chat-messages" class="cell large-8 u-grow-full-height js-chat-messages">
                   <form action="#" class="chat-main">
                     <div class="chat-main-content" id="main-chat">
                       <div class="chat-scroller">

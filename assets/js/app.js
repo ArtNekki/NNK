@@ -33027,7 +33027,8 @@ Object(_utils_utils_js__WEBPACK_IMPORTED_MODULE_1__["ready"])(function () {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _utils_utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../utils/utils */ "./src/assets/js/utils/utils.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var baron__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! baron */ "./node_modules/baron/src/core.js");
 /* harmony import */ var baron__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(baron__WEBPACK_IMPORTED_MODULE_1__);
 
@@ -33042,6 +33043,19 @@ __webpack_require__.r(__webpack_exports__);
 //     impact: 'scroller'
 //   });
 // });
+
+jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('#chat-filter').on('click', function (e) {
+    var message = e.target.closest('.chat-message--filter');
+
+    if (message) {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('html').addClass('page--manager-selected');
+    }
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('#chat-open-filter').on('click', function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('html').removeClass('page--manager-selected');
+  });
+});
 
 /***/ }),
 
