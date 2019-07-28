@@ -23,7 +23,7 @@
     </script>
   </head>
 <body>
-  <div class="page__inner">
+  <div id="page" class="page__inner">
     <header class="page-header">
       <div class="grid-container">
         <div class="page-header-inner">
@@ -101,6 +101,9 @@
       </div>
     </header>
     <main class="page-main">
+      <div class="grid-container page-go-back-mobile">
+        <a onclick="window.history.back()" class="button secondary expanded">Назад</a>
+      </div>
       <div class="grid-container u-full-height">
         <div class="grid-x grid-margin-x u-full-height">
           <div class="cell medium-12 large-8">
@@ -147,7 +150,7 @@
                 <div class="cell medium-6 main-content-header-left">
                   <span class="text text--size-md text--bolder">Распределение средств</span>
                 </div>
-                <div class="cell medium-6 main-content-header-right main-content-header-right--space-between">
+                <div class="cell medium-6 main-content-header-distribution">
                   <span class="text text--light">Остаток на счете</span>
                   <span class="text text--currency text--size-md">16 456</span>
                   <span class="text text--light">Нераспределено</span>
