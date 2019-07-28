@@ -21,17 +21,29 @@
   }
 
   &-right {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
     // margin-top: 1rem;
 
     @include breakpoint(medium) {
-      display: flex;
-      align-items: center;
+      margin-top: 0;
       justify-content: flex-end;
     }
+  }
 
-    &--space-between {
+  &-distribution {
+    @include breakpoint(medium) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .text:nth-child(2) {
+      margin-right: 1rem;
+
       @include breakpoint(medium) {
-        justify-content: space-between;
+        margin-right: 0.5rem;
       }
     }
   }
