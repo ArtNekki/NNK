@@ -1,14 +1,18 @@
 .login-form {
   width: 100%;
-  max-width: 580px;
-  margin-top: 15rem;
-  margin-right: auto;
-  margin-left: auto;
+  height: 100vh;
   padding: 23px 28px 38px 24px;
   background-color: $white;
-  border-radius: $global-radius;
-  border: 1px solid $light-gray;
-  box-shadow: 0 8px 20px 0 rgba($black, 0.15);
+
+
+  @include breakpoint(medium) {
+    max-width: 580px;
+    height: auto;
+    margin: auto;
+    border-radius: $global-radius;
+    border: 1px solid $light-gray;
+    box-shadow: 0 8px 20px 0 rgba($black, 0.15);
+  }
 
   &-header {
     margin-bottom: 2.3rem;
