@@ -10,7 +10,11 @@
   &-section {
 
     &:first-child {
-      padding-right: 0.75rem
+      padding-right: 0;
+
+      @include breakpoint(medium) {
+        padding-right: 0.75rem
+      }
     }
   }
 

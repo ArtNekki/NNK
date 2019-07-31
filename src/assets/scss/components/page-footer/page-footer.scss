@@ -1,8 +1,13 @@
 .page-footer {
   padding-top: 2rem;
   padding-bottom: 2rem;
+  text-align: center;
   border-top: 1px solid $light-gray;
   background-color: $white;
+
+  @include breakpoint(medium) {
+    text-align: left;
+  }
 
   small {
     display: block;
@@ -32,7 +37,10 @@
   }
 
   &-right {
+    margin-top: 1rem;
+
     @include breakpoint(medium) {
+      margin-top: 0;
       display: flex;
       align-items: flex-end;
       justify-content: flex-end;

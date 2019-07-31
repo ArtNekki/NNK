@@ -39,6 +39,7 @@
   }
 
   &--distribution {
+    width: calc(100% - 1px);
     margin-bottom: 1.5rem;
 
     thead {
