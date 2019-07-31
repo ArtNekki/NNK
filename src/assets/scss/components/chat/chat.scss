@@ -1,6 +1,7 @@
 .chat {
   $scrollbar-width:           6px;
   @include u-grow-full-height;
+  flex: 1;
 
   &-mobile-toolbar {
     padding-top: 2rem;
