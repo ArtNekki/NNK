@@ -1,5 +1,6 @@
 .page-main {
   @include breakpoint(medium) {
     flex: 1;
+    flex-basis: auto;
   }
 }
